@@ -69,6 +69,7 @@
         "drill_out_of_range": "ignore",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
+        "footprint_type_mismatch": "error",
         "hole_clearance": "ignore",
         "hole_near_hole": "error",
         "invalid_outline": "error",
@@ -87,6 +88,7 @@
         "silk_over_copper": "ignore",
         "silk_overlap": "ignore",
         "skew_out_of_range": "error",
+        "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
         "track_dangling": "warning",
         "track_width": "error",
@@ -364,7 +366,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Mitayi-Pico-RP2040.kicad_pro",
+    "filename": "Mitayi-Pico-RP2040-r0.2.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -388,7 +390,7 @@
       }
     ],
     "meta": {
-      "version": 1
+      "version": 2
     },
     "net_colors": null
   },
