@@ -66,10 +66,35 @@
     "zone_display_mode": 1
   },
   "meta": {
-    "filename": "Mitayi-Pico-RP2040-r0.2.kicad_prl",
+    "filename": "Mitayi-Pico-RP2040.kicad_prl",
     "version": 3
   },
   "project": {
-    "files": []
+    "files": [
+      {
+        "name": "Mitayi-Pico-RP2040.kicad_sch",
+        "open": false,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": -9,
+          "pos_y": -9,
+          "size_x": 2578,
+          "size_y": 1398
+        }
+      },
+      {
+        "name": "Mitayi-Pico-RP2040.kicad_pcb",
+        "open": false,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": -9,
+          "pos_y": -9,
+          "size_x": 2578,
+          "size_y": 1398
+        }
+      }
+    ]
   }
 }

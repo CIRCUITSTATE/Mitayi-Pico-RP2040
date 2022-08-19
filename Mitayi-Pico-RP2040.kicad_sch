@@ -6,11 +6,11 @@
 
   (title_block
     (title "Mitayi Pico - RP2040")
-    (date "2021-08-26")
+    (date "2022-08-19")
     (rev "0.2")
-    (company "CIRCUITSTATE Electronics")
+    (company "CIRCUITSTATE Electronics LLP")
     (comment 1 "Designed by Vishnu Mohanan")
-    (comment 2 "Copyright 2021 CIRCUITSTATE Electronics")
+    (comment 2 "Copyright 2021 CIRCUITSTATE Electronics LLP")
   )
 
   (lib_symbols
