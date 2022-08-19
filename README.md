@@ -1,6 +1,6 @@
-![GitHub](https://img.shields.io/github/license/CIRCUITSTATE/Mitayi-Pico-RP2040?style=flat)
 ![Category: Development Boards](https://img.shields.io/badge/Category-Development%20Boards-blue?style=flat)
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/CIRCUITSTATE/Mitayi-Pico-RP2040?include_prereleases)
+![GitHub](https://img.shields.io/github/license/CIRCUITSTATE/Mitayi-Pico-RP2040?style=flat)
 
 # Mitayi Pico
 
