@@ -1,5 +1,12 @@
 
 #
+### **+05:30 08:46:57 PM 19-08-2022, Friday**
+
+  Added new `Revisions` folder. When a revision is completed, the projected can be saved to this folder using the **Save As** option in KiCad. This is in addition to generating a git revision. The project must be saved with the revision number at the end, for example ***"Mitayi-Pico-RP2040-r0.2"***. KiCad will complain about recursive folders but you can ignore them. Just delete the recursive `Revisions` folder from the the project that was just saved to the new `Revisions` folder.
+
+  I just saved the version **r0.2**. Revisions, once saved, should not be modified. Make all the modifications on the root project.
+
+#
 ### **+05:30 07:03:26 PM 26-08-2021, Thursday**
 
   I made a few mistakes in the v0.1 design. Some of the vias were placed on top of the pads. While this is not a big issue, PCBWay complained about this. They said the solder mask won't be applied on such vias, which is okay. Still, placing vias on pads is not a good idea. So I modified the design and moved all the vias from pads.
