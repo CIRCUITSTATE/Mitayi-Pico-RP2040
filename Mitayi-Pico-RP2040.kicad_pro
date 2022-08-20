@@ -55,7 +55,10 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "clearance|146600749|85758100|2cd93f73-b284-466e-a919-6d82b013be80|59c49863-cd9e-46ba-ad48-1e53cccda878",
+        "clearance|150400000|73600000|2cc6c9df-7349-4080-a65e-3939a964f660|1b49471d-4b5e-47bf-9e5c-c2a8632049ff"
+      ],
       "meta": {
         "version": 2
       },
@@ -366,7 +369,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Mitayi-Pico-RP2040-r0.2.kicad_pro",
+    "filename": "Mitayi-Pico-RP2040.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -400,8 +403,8 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
-      "vrml": ""
+      "step": "Export/[4] 20-08-2022/r0.2/3D/Mitayi-Pico-RP2040-r0.2-STEP-20082022-01.step",
+      "vrml": "Export/[4] 20-08-2022/r0.2/3D/Mitayi-Pico-RP2040-r0.2-VRML-20082022-01.wrl"
     },
     "page_layout_descr_file": ""
   },
@@ -440,7 +443,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "Export/[4] 20-08-2022/r0.2/SCH/01/",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
     "subpart_first_id": 65,

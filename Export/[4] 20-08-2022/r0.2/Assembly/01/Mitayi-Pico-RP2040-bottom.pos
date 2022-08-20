@@ -1,0 +1,9 @@
+### Module positions - created on Sat Aug 20 11:03:17 2022 ###
+### Printed by Pcbnew version (6.0.6)
+## Unit = mm, Angle = deg.
+## Side : bottom
+# Ref     Val                 Package                                  PosX       PosY       Rot  Side
+J3        Header_2            PinHeader_1x20_2H_P2.54mm_Vertical   -19.4000    49.7000  180.0000  bottom
+JP2       VR2_OUT             R_0402_1005Metric                    -15.4000    42.5100    0.0000  bottom
+U1        NCP1117-3.3_SOT223  SOT-223-3_TabPin2                    -11.1300    39.4000    0.0000  bottom
+## End
