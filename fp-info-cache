@@ -1,4 +1,4 @@
-19875272523773687
+19878599578493525
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -2526,6 +2526,20 @@ USB Type-C
 0
 20
 17
+CIRCUITSTATE_Jumper_SMD
+Solder-Jumper_2P_Open_0402
+Two-pin SMD solder jumper in a size similar to 0402
+jumper solder
+0
+2
+2
+CIRCUITSTATE_Jumper_SMD
+Solder-Jumper_3P_Open_0402
+Two-pin SMD solder jumper in a size similar to 0402
+jumper solder
+0
+3
+3
 CIRCUITSTATE_Jumper_SMD
 SolderJumper-2_P1.3mm_Bridged_Rounded-Pad_0.85x1mm
 SMD Solder Jumper, 1x1.2mm, rounded Pads, 0.3mm gap, open
