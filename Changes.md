@@ -1,4 +1,24 @@
 
+#
+### **+05:30 09:32:55 AM 20-02-2023, Monday**
+
+  * New revision 🎯 **r0.5**.
+  * Fixed crystal footprint issue.
+  * USB-Micro footprint has been masked out to prevent shorting when soldering USB-C connector.
+  * Removed AMS1117-3.3 voltage regulator.
+  * New dedicated push-button for BOOTSEL called UBUT, with dual functions.
+  * Removed all redundant silkscreen items.
+  * New EXP8 8-pin expansion connector in 2x4 2.54mm pin header.
+  * Changed project type to KiCad 7.
+  * Updated solder jumper footprints.
+  * Moved OSHW logo to back.
+
+#
+### **+05:30 09:54:46 AM 21-09-2022, Wednesday**
+
+  * The r0.3 PCB looks so complicated with its routing. There are 180+ vias for a rather simple board. So I am going to remove all the tracks and start routing afresh. The r0.3 will be saved for reference anyway.
+
+  * Starts 📢 **r0.4**.
 
 #
 ### **+05:30 05:47:05 PM 05-09-2022, Monday**
@@ -6,7 +26,7 @@
   * Added new version info.
   * Added license info.
   * Connected with [CADLAB.io](https://cadlab.io/project/25932). 
-
+  
 #
 ### **+05:30 05:33:45 PM 27-08-2022, Saturday**
 

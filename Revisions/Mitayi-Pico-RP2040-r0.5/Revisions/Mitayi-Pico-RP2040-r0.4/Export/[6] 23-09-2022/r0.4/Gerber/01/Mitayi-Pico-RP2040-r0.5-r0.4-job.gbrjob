@@ -1,0 +1,149 @@
+{
+"DesignRules": [
+{
+"Layers": "Outer",
+"MinLineWidth": 0.2,
+"PadToPad": 0.15,
+"PadToTrack": 0.15,
+"RegionToRegion": 0.15,
+"TrackToRegion": 0.15,
+"TrackToTrack": 0.15
+}
+],
+"FilesAttributes": [
+{
+"FileFunction": "Copper,L1,Top",
+"FilePolarity": "Positive",
+"Path": "Mitayi-Pico-RP2040-r0.4-F_Cu.gbr"
+},
+{
+"FileFunction": "Copper,L2,Bot",
+"FilePolarity": "Positive",
+"Path": "Mitayi-Pico-RP2040-r0.4-B_Cu.gbr"
+},
+{
+"FileFunction": "SolderPaste,Top",
+"FilePolarity": "Positive",
+"Path": "Mitayi-Pico-RP2040-r0.4-F_Paste.gbr"
+},
+{
+"FileFunction": "SolderPaste,Bot",
+"FilePolarity": "Positive",
+"Path": "Mitayi-Pico-RP2040-r0.4-B_Paste.gbr"
+},
+{
+"FileFunction": "Legend,Top",
+"FilePolarity": "Positive",
+"Path": "Mitayi-Pico-RP2040-r0.4-F_Silkscreen.gbr"
+},
+{
+"FileFunction": "Legend,Bot",
+"FilePolarity": "Positive",
+"Path": "Mitayi-Pico-RP2040-r0.4-B_Silkscreen.gbr"
+},
+{
+"FileFunction": "SolderMask,Top",
+"FilePolarity": "Negative",
+"Path": "Mitayi-Pico-RP2040-r0.4-F_Mask.gbr"
+},
+{
+"FileFunction": "SolderMask,Bot",
+"FilePolarity": "Negative",
+"Path": "Mitayi-Pico-RP2040-r0.4-B_Mask.gbr"
+},
+{
+"FileFunction": "Other,User",
+"FilePolarity": "Positive",
+"Path": "Mitayi-Pico-RP2040-r0.4-User_Drawings.gbr"
+},
+{
+"FileFunction": "Other,User",
+"FilePolarity": "Positive",
+"Path": "Mitayi-Pico-RP2040-r0.4-User_Comments.gbr"
+},
+{
+"FileFunction": "Profile",
+"FilePolarity": "Positive",
+"Path": "Mitayi-Pico-RP2040-r0.4-Edge_Cuts.gbr"
+},
+{
+"FileFunction": "AssemblyDrawing,Top",
+"FilePolarity": "Positive",
+"Path": "Mitayi-Pico-RP2040-r0.4-F_Fab.gbr"
+},
+{
+"FileFunction": "AssemblyDrawing,Bot",
+"FilePolarity": "Positive",
+"Path": "Mitayi-Pico-RP2040-r0.4-B_Fab.gbr"
+}
+],
+"GeneralSpecs": {
+"BoardThickness": 1.6,
+"Finish": "None",
+"LayerNumber": 2,
+"ProjectId": {
+"GUID": "4d697461-7969-42d5-9069-636f2d525032",
+"Name": "Mitayi-Pico-RP2040",
+"Revision": "0.4"
+},
+"Size": {
+"X": 21.1,
+"Y": 51.1
+}
+},
+"Header": {
+"CreationDate": "2022-09-23T08:48:44+05:30",
+"GenerationSoftware": {
+"Application": "Pcbnew",
+"Vendor": "KiCad",
+"Version": "(6.0.7)"
+}
+},
+"MaterialStackup": [
+{
+"Name": "Top Silk Screen",
+"Type": "Legend"
+},
+{
+"Name": "Top Solder Paste",
+"Type": "SolderPaste"
+},
+{
+"Color": "Green",
+"Name": "Top Solder Mask",
+"Thickness": 0.01,
+"Type": "SolderMask"
+},
+{
+"Name": "F.Cu",
+"Thickness": 0.035,
+"Type": "Copper"
+},
+{
+"Material": "FR4",
+"Name": "F.Cu/B.Cu",
+"Notes": "Type: dielectric layer 1 (from F.Cu to B.Cu)",
+"Thickness": 1.51,
+"Type": "Dielectric"
+},
+{
+"Name": "B.Cu",
+"Thickness": 0.035,
+"Type": "Copper"
+},
+{
+"Color": "Green",
+"Name": "Bottom Solder Mask",
+"Thickness": 0.01,
+"Type": "SolderMask"
+},
+{
+"Name": "Bottom Solder Paste",
+"Type": "SolderPaste"
+},
+{
+"Name": "Bottom Silk Screen",
+"Type": "Legend"
+}
+]
+}

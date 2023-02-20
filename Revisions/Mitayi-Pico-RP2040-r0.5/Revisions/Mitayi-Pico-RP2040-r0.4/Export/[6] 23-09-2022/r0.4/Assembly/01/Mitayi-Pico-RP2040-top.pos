@@ -1,0 +1,51 @@
+### Module positions - created on Fri Sep 23 08:54:41 2022 ###
+### Printed by Pcbnew version (6.0.7)
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val                      Package                                           PosX       PosY       Rot  Side
+C1        100n                     C_0402_1005Metric_Pad0.74x0.62mm_HandSolder     6.9100    42.7000    0.0000  top
+C2        100n                     C_0402_1005Metric_Pad0.74x0.62mm_HandSolder    12.7500    17.2300  -90.0000  top
+C4        1u                       C_0402_1005Metric_Pad0.74x0.62mm_HandSolder    13.9300    29.9400   90.0000  top
+C5        1u                       C_0402_1005Metric_Pad0.74x0.62mm_HandSolder    10.7200    30.0250   90.0000  top
+C6        100n                     C_0402_1005Metric_Pad0.74x0.62mm_HandSolder     5.0800    20.4000  180.0000  top
+C7        100n                     C_0402_1005Metric_Pad0.74x0.62mm_HandSolder     9.7200    30.0300   90.0000  top
+C8        100n                     C_0402_1005Metric_Pad0.74x0.62mm_HandSolder    16.1000    19.3100  -90.0000  top
+C9        100n                     C_0402_1005Metric_Pad0.74x0.62mm_HandSolder    11.6300    17.2200   90.0000  top
+C10       100n                     C_0402_1005Metric_Pad0.74x0.62mm_HandSolder    16.2300    27.6300    0.0000  top
+C11       100n                     C_0402_1005Metric_Pad0.74x0.62mm_HandSolder    15.9050    29.9300   90.0000  top
+C12       100n                     C_0402_1005Metric_Pad0.74x0.62mm_HandSolder     5.4300    27.0100   90.0000  top
+C13       10u                      C_0603_1608Metric                              14.8100    41.2900  180.0000  top
+C14       2.2uF                    CP_EIA-2012-12_Kemet-R                         15.0350    33.6000    0.0000  top
+C15       10u                      C_0603_1608Metric                              14.7900    31.9200    0.0000  top
+C16       470pF                    C_0402_1005Metric_Pad0.74x0.62mm_HandSolder    13.7600    39.3200   90.0000  top
+C17       30pF                     C_0402_1005Metric_Pad0.74x0.62mm_HandSolder     8.5100    13.7800   90.0000  top
+C18       30pF                     C_0402_1005Metric_Pad0.74x0.62mm_HandSolder    14.3300    13.8100  -90.0000  top
+C19       1u                       C_0402_1005Metric_Pad0.74x0.62mm_HandSolder     5.2400    42.9900   90.0000  top
+D1        PMEG4005EJ               D_SOD-323_HandSoldering                        16.9000    44.6000   90.0000  top
+D2        DBG_LED                  LED_0603_1608Metric                            17.0300    16.0500   90.0000  top
+D3        POW_LED                  LED_0603_1608Metric                             4.2000    46.2000   90.0000  top
+J2        USB_C_Receptacle_USB2.0  Korean-Hroparts-Elec_TYPE-C-31-M-12            10.5100    49.5700  180.0000  top
+J3        Header_1                 PinHeader_1x20_2H_P2.54mm_Vertical              1.6000    49.7000    0.0000  top
+J5        SWD                      PinHeader_1x03_P2.54mm_Vertical                 7.9500     1.6000   90.0000  top
+J6        USB_B_Micro              USB_Micro-B_Molex-105017-0001                  10.5100    48.4000  180.0000  top
+JP1       AREF_SEL                 Solder-Jumper_2P_Open_0402                     17.5000    39.2500   90.0000  top
+JP4       VR1_CE                   Solder-Jumper_2P_Open_0402                     15.7500    39.2500  -90.0000  top
+JP5       DEB_EN                   Solder-Jumper_2P_Open_0402                     17.4000    19.2900  -90.0000  top
+R1        DNP                      R_0402_1005Metric_Pad0.72x0.64mm_HandSolder    10.1800    32.1700  180.0000  top
+R2        1k                       R_0402_1005Metric_Pad0.72x0.64mm_HandSolder     7.8500    32.1700  180.0000  top
+R3        5.1K                     R_0402_1005Metric_Pad0.72x0.64mm_HandSolder    14.4000    42.7000    0.0000  top
+R4        5.1K                     R_0402_1005Metric_Pad0.72x0.64mm_HandSolder     9.3500    42.7000  180.0000  top
+R5        27R                      R_0402_1005Metric_Pad0.72x0.64mm_HandSolder    11.8250    29.9500  -90.0000  top
+R6        27R                      R_0402_1005Metric_Pad0.72x0.64mm_HandSolder    12.8250    29.9500  -90.0000  top
+R7        470R                     R_0402_1005Metric_Pad0.72x0.64mm_HandSolder    16.4700    10.8600  180.0000  top
+R8        470R                     R_0402_1005Metric_Pad0.72x0.64mm_HandSolder     4.1700    43.0200   90.0000  top
+R9        10K                      R_0402_1005Metric_Pad0.72x0.64mm_HandSolder    17.3000    33.1900  -90.0000  top
+R10       1k                       R_0402_1005Metric_Pad0.72x0.64mm_HandSolder    10.2200    17.2200  -90.0000  top
+R11       5.1K                     R_0402_1005Metric_Pad0.72x0.64mm_HandSolder     8.3300    30.0300  -90.0000  top
+SW1       Reset                    CK_SW_SPST_UK-B0273-SP25Y                       5.3000    38.6000  -90.0000  top
+SW2       UBUT                     CK_SW_SPST_UK-B0273-SP25Y                       5.2850    32.2350   90.0000  top
+U1        W25Q128JVS               SOIC-8_5.23x5.23mm_P1.27mm                      9.8600    37.4500   90.0000  top
+U2        MIC5219-3.3YM5           SOT-23-5                                       15.3500    36.3300  180.0000  top
+U3        RP2040                   RP2040-QFN-56                                  10.8200    23.6300    0.0000  top
+Y1        YIC-12M20P2/XT324-10/10  Crystal_SMD_3225-4Pin_3.2x2.5mm                11.4300    13.9500    0.0000  top
+## End

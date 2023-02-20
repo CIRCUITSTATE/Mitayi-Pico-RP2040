@@ -2,11 +2,13 @@
   "board": {
     "active_layer": 0,
     "active_layer_preset": "",
-    "auto_track_width": false,
+    "auto_track_width": true,
+    "hidden_netclasses": [],
     "hidden_nets": [],
-    "high_contrast_mode": 1,
-    "net_color_mode": 1,
+    "high_contrast_mode": 0,
+    "net_color_mode": 2,
     "opacity": {
+      "images": 0.6,
       "pads": 0.7699999809265137,
       "tracks": 1.0,
       "vias": 1.0,
@@ -16,15 +18,15 @@
     "selection_filter": {
       "dimensions": false,
       "footprints": true,
-      "graphics": false,
+      "graphics": true,
       "keepouts": false,
       "lockedItems": true,
       "otherItems": false,
       "pads": false,
-      "text": true,
+      "text": false,
       "tracks": true,
       "vias": true,
-      "zones": false
+      "zones": true
     },
     "visible_items": [
       0,
@@ -62,7 +64,7 @@
       35,
       36
     ],
-    "visible_layers": "800d03c_ffffffff",
+    "visible_layers": "800d330_ffffffff",
     "zone_display_mode": 1
   },
   "meta": {
@@ -70,6 +72,31 @@
     "version": 3
   },
   "project": {
-    "files": []
+    "files": [
+      {
+        "name": "Mitayi-Pico-RP2040.kicad_pcb",
+        "open": false,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": -9,
+          "pos_y": -9,
+          "size_x": 2578,
+          "size_y": 1398
+        }
+      },
+      {
+        "name": "Mitayi-Pico-RP2040.kicad_sch",
+        "open": false,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": -9,
+          "pos_y": -9,
+          "size_x": 2578,
+          "size_y": 1398
+        }
+      }
+    ]
   }
 }
