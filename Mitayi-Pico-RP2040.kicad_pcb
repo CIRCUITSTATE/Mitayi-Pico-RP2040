@@ -137,11 +137,11 @@
 	(net 4 "VBUS")
 	(net 5 "/RUN")
 	(net 6 "/XIN")
-	(net 7 "Net-(C16-Pad1)")
+	(net 7 "Net-(U2-BP)")
 	(net 8 "/USB_D+")
 	(net 9 "/USB_D-")
 	(net 10 "Net-(C18-Pad1)")
-	(net 11 "Net-(D2-Pad1)")
+	(net 11 "Net-(D2-A)")
 	(net 12 "/GPIO0")
 	(net 13 "/GPIO1")
 	(net 14 "/GPIO2")
@@ -184,17 +184,17 @@
 	(net 51 "/QSPI_SD0")
 	(net 52 "/QSPI_SCLK")
 	(net 53 "/QSPI_SD3")
-	(net 54 "Net-(R5-Pad2)")
-	(net 55 "Net-(R6-Pad2)")
-	(net 56 "Net-(D2-Pad2)")
-	(net 57 "Net-(D3-Pad1)")
-	(net 58 "unconnected-(J6-Pad4)")
+	(net 54 "Net-(D2-K)")
+	(net 55 "Net-(D3-K)")
+	(net 56 "Net-(J2-CC1)")
+	(net 57 "unconnected-(J2-SBU2-PadB8)")
+	(net 58 "Net-(J2-CC2)")
 	(net 59 "/VSYS")
-	(net 60 "Net-(J2-PadA5)")
-	(net 61 "unconnected-(J2-PadA8)")
-	(net 62 "Net-(J2-PadB5)")
-	(net 63 "unconnected-(J2-PadB8)")
-	(net 64 "Net-(JP6-Pad2)")
+	(net 60 "unconnected-(J2-SBU1-PadA8)")
+	(net 61 "unconnected-(J6-ID-Pad4)")
+	(net 62 "Net-(JP6-C)")
+	(net 63 "Net-(U3-USB-DP)")
+	(net 64 "Net-(U3-USB-DM)")
 	(footprint "CIRCUITSTATE_Jumper_SMD:Solder-Jumper_2P_Open_0402"
 		(layer "F.Cu")
 		(uuid "0095d3c2-3443-4ef0-bd21-227a46d64e0a")
@@ -202,7 +202,7 @@
 		(descr "Two-pin SMD solder jumper in a size similar to 0402")
 		(tags "jumper solder")
 		(property "Reference" "JP5"
-			(at -2.1 0.03 360)
+			(at -2.1 0.03 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "148e8181-7560-4545-b972-059a85a1b201")
@@ -214,17 +214,17 @@
 			)
 		)
 		(property "Value" "DEB_EN"
-			(at -0.08 0.57 360)
+			(at -0.08 0.57 0)
 			(layer "F.Fab")
 			(uuid "c098025c-9b9b-4e86-98f5-35bab144935f")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "CIRCUITSTATE_Jumper_SMD:Solder-Jumper_2P_Open_0402"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -260,7 +260,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "20e40f29-625c-42f4-ad19-0b39eb816d9f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "96f01593-38f2-404c-a123-a2af3561dfb3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" "DEB_EN"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1f3a6a60-0fd8-46b8-9ebf-855d77caafb3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "SolderJumper*Open*")
 		(path "/83c5fd71-ba9f-4d4f-a894-c91434135740")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -384,13 +425,13 @@
 			(uuid "8372d7c9-d2ec-4986-abe2-fcf09fed7037")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "c8973a0e-45f4-4cc1-b79a-4a4d01d325eb")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -413,7 +454,7 @@
 			(roundrect_rratio 0.25)
 			(chamfer_ratio 0)
 			(chamfer top_left bottom_left)
-			(net 56 "Net-(D2-Pad2)")
+			(net 11 "Net-(D2-A)")
 			(pinfunction "B")
 			(pintype "passive")
 			(uuid "6fa5411a-fa63-4601-bd7e-6bcd5fd1e08d")
@@ -437,18 +478,18 @@
 				)
 			)
 		)
-		(property "Value" "DBG_LED"
+		(property "Value" "Blue"
 			(at 0.06 0.8 180)
 			(layer "F.Fab")
 			(uuid "a6340727-23a1-4b35-b0bf-8a7967da2af3")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -484,7 +525,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "05349969-d98e-4cd3-b62c-b1b4ff2353ca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "41191d26-2451-4b64-ba02-96ebafb2197b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" "DBG_LED"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f7af6fc4-21f4-4923-92da-da13e3445ba9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/bc345022-7014-4561-9b81-6f084d1391ed")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -613,8 +695,8 @@
 			(uuid "f0d125e5-6d83-4fae-8787-1290dc32e0e3")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -623,7 +705,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 11 "Net-(D2-Pad1)")
+			(net 54 "Net-(D2-K)")
 			(pinfunction "K")
 			(pintype "passive")
 			(uuid "eaa07796-a714-44bc-81e5-ecfa1f1c57c0")
@@ -633,7 +715,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 56 "Net-(D2-Pad2)")
+			(net 11 "Net-(D2-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "5d104733-555c-4861-87b0-536194dc720a")
@@ -675,12 +757,12 @@
 			(uuid "459c3fca-9456-437d-b5ce-1498a8d6ad7b")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -716,7 +798,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5a80cb8f-472f-47d4-a67f-421b1d51b29c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1ffab08e-c52c-494e-b7fd-6e9e03dc55f6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dd69cdbf-9aac-4809-864f-0074b8237fa9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
 		(path "/0ca11d51-f2db-4049-943a-6036618ae92e")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -820,13 +943,13 @@
 			(uuid "49241eec-56b1-47a4-aa06-362186490dc6")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0.02 180)
+			(at 0 -0.01 180)
 			(layer "F.Fab")
 			(uuid "fbe22539-b36a-46ab-8eb8-aabf272a348e")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -879,18 +1002,18 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1uF"
 			(at 0.03 0.66 180)
 			(layer "F.Fab")
 			(uuid "33d69e56-b85a-4a69-ade4-04420e2b790a")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -926,7 +1049,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a0b695ad-b0ec-4698-97b5-d8d56f13ece7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "95211d40-c40d-4623-abf8-54af8eaa695d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "69284a59-c3b9-475e-b22e-0205ba74207c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
 		(path "/759b0a5e-4479-4480-8c3f-a01406985f79")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1030,13 +1194,13 @@
 			(uuid "e5a82a42-8c86-4892-b1dd-eff3a6ad4bef")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -0.03 0.02 180)
+			(at -0.01 -0.01 180)
 			(layer "F.Fab")
 			(uuid "ca415f7a-f8bc-46f0-b399-2959928dddda")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -1070,6 +1234,134 @@
 			)
 		)
 	)
+	(footprint "kibuzzard-660C3D9D"
+		(layer "F.Cu")
+		(uuid "28ee9467-9256-4e49-b896-bc8026cdcb7e")
+		(at 140.3 96.7)
+		(descr "Generated with KiBuzzard")
+		(tags "kb_params=eyJBbGlnbm1lbnRDaG9pY2UiOiAiTGVmdCIsICJDYXBMZWZ0Q2hvaWNlIjogIigiLCAiQ2FwUmlnaHRDaG9pY2UiOiAiKSIsICJGb250Q29tYm9Cb3giOiAiVWJ1bnR1TW9uby1CIiwgIkhlaWdodEN0cmwiOiAiMC43IiwgIkxheWVyQ29tYm9Cb3giOiAiRi5TaWxrUyIsICJNdWx0aUxpbmVUZXh0IjogIkJUTiIsICJQYWRkaW5nQm90dG9tQ3RybCI6ICIyIiwgIlBhZGRpbmdMZWZ0Q3RybCI6ICIxIiwgIlBhZGRpbmdSaWdodEN0cmwiOiAiMSIsICJQYWRkaW5nVG9wQ3RybCI6ICIyIiwgIldpZHRoQ3RybCI6ICIwLjcifQ==")
+		(property "Reference" "kibuzzard-660C3D9D"
+			(at 0 -3.49287 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "40a52452-7cf7-477e-96e0-e8b538cfc229")
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "Value" "G***"
+			(at 0 3.49287 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "0bac16f4-602a-409c-842a-e5a7d5fa975c")
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3ac2b018-d0c6-4d48-ac2f-b6a97f17efd6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bec6efdb-faf6-4d33-8c09-b465a30165de")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "83f73925-db6a-447e-8525-e88a07ea0fd1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr board_only exclude_from_pos_files exclude_from_bom)
+		(fp_poly
+			(pts
+				(xy -0.641191 0.042227) (xy -0.641191 0.228917) (xy -0.609521 0.232251) (xy -0.575627 0.233362)
+				(xy -0.530066 0.229473) (xy -0.490617 0.215027) (xy -0.46228 0.185023) (xy -0.451167 0.135573) (xy -0.482838 0.063897)
+				(xy -0.567849 0.042227) (xy -0.641191 0.042227)
+			)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.SilkS")
+			(uuid "9e9fbc15-b021-4bed-bce8-55868b60c599")
+		)
+		(fp_poly
+			(pts
+				(xy -0.587851 -0.07112) (xy -0.508952 -0.093901) (xy -0.482282 -0.156686) (xy -0.490061 -0.196136)
+				(xy -0.511175 -0.219472) (xy -0.54229 -0.230584) (xy -0.578961 -0.233362) (xy -0.611187 -0.232251)
+				(xy -0.641191 -0.228917) (xy -0.641191 -0.07112) (xy -0.587851 -0.07112)
+			)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.SilkS")
+			(uuid "34bb1cb1-6041-44f3-96b6-a024cc6d126d")
+		)
+		(fp_poly
+			(pts
+				(xy -0.777875 -0.44487) (xy -0.824177 -0.44487) (xy -0.910967 -0.436322) (xy -0.994422 -0.411007)
+				(xy -1.071334 -0.369896) (xy -1.138748 -0.314571) (xy -1.194073 -0.247157) (xy -1.235184 -0.170245)
+				(xy -1.260499 -0.08679) (xy -1.269047 0) (xy -1.260499 0.08679) (xy -1.235184 0.170245) (xy -1.194073 0.247157)
+				(xy -1.138748 0.314571) (xy -1.071334 0.369896) (xy -0.994422 0.411007) (xy -0.910967 0.436322)
+				(xy -0.824177 0.44487) (xy -0.777875 0.44487) (xy -0.58674 0.44487) (xy -0.58674 0.352266) (xy -0.633135 0.351016)
+				(xy -0.681196 0.347266) (xy -0.729813 0.341015) (xy -0.777875 0.332264) (xy -0.777875 -0.335598)
+				(xy -0.692309 -0.347266) (xy -0.600075 -0.352266) (xy -0.529511 -0.348238) (xy -0.473392 -0.336153)
+				(xy -0.396716 -0.293926) (xy -0.358934 -0.235585) (xy -0.348932 -0.171133) (xy -0.354905 -0.125016)
+				(xy -0.372824 -0.084455) (xy -0.436721 -0.024447) (xy -0.377964 0.005556) (xy -0.341709 0.04445)
+				(xy -0.322957 0.0889) (xy -0.316706 0.135573) (xy -0.321985 0.192663) (xy -0.33782 0.239474) (xy -0.395049 0.306149)
+				(xy -0.434499 0.327541) (xy -0.480616 0.341709) (xy -0.531872 0.349627) (xy -0.58674 0.352266) (xy -0.58674 0.44487)
+				(xy 0.064453 0.44487) (xy 0.064453 0.343376) (xy -0.073342 0.343376) (xy -0.073342 -0.23114) (xy -0.254476 -0.23114)
+				(xy -0.254476 -0.344488) (xy 0.245586 -0.344488) (xy 0.245586 -0.23114) (xy 0.064453 -0.23114) (xy 0.064453 0.343376)
+				(xy 0.064453 0.44487) (xy 0.667861 0.44487) (xy 0.667861 0.343376) (xy 0.63582 0.267132) (xy 0.601927 0.191012)
+				(xy 0.566182 0.115014) (xy 0.528585 0.039017) (xy 0.489135 -0.037103) (xy 0.447834 -0.113348) (xy 0.447834 0.343376)
+				(xy 0.324485 0.343376) (xy 0.324485 -0.344488) (xy 0.434499 -0.344488) (xy 0.465614 -0.293509) (xy 0.496729 -0.238363)
+				(xy 0.527427 -0.181273) (xy 0.557292 -0.12446) (xy 0.585629 -0.06862) (xy 0.611743 -0.014446) (xy 0.63494 0.03556)
+				(xy 0.654526 0.078899) (xy 0.654526 -0.344488) (xy 0.777875 -0.344488) (xy 0.777875 0.343376) (xy 0.667861 0.343376)
+				(xy 0.667861 0.44487) (xy 0.777875 0.44487) (xy 0.824177 0.44487) (xy 0.910967 0.436322) (xy 0.994422 0.411007)
+				(xy 1.071334 0.369896) (xy 1.138748 0.314571) (xy 1.194073 0.247157) (xy 1.235184 0.170245) (xy 1.260499 0.08679)
+				(xy 1.269047 0) (xy 1.260499 -0.08679) (xy 1.235184 -0.170245) (xy 1.194073 -0.247157) (xy 1.138748 -0.314571)
+				(xy 1.071334 -0.369896) (xy 0.994422 -0.411007) (xy 0.910967 -0.436322) (xy 0.824177 -0.44487) (xy 0.777875 -0.44487)
+				(xy -0.777875 -0.44487)
+			)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.SilkS")
+			(uuid "18d6c862-e0aa-462c-8104-30599086fbe2")
+		)
+	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "2d727783-0b0a-4ac5-8910-8f8e3eb4449f")
@@ -1089,18 +1381,18 @@
 				)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10uF"
 			(at -0.07 -0.73 90)
 			(layer "F.Fab")
 			(uuid "fcf35f22-7514-4d8c-8cf4-0a2c207e4875")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1136,7 +1428,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c82c5bc8-2781-41ab-93fc-db21ee95b71a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "62a002ae-7e94-47e6-bbbf-0aeb90071e98")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b2202f70-2283-45c8-af57-a7e9307a8d14")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
 		(path "/b14bbef9-e03b-4034-b979-c8e7aec83456")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1245,8 +1578,8 @@
 			(uuid "4e4eca54-3e18-47ce-a268-848b710747b0")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -1299,18 +1632,18 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1uF"
 			(at -0.04 0.54 90)
 			(layer "F.Fab")
 			(uuid "d168406c-acb7-4463-b832-676e7e2d214e")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1346,7 +1679,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "78b276bc-d78e-4a33-b0ad-01c5e3193884")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d78e941b-9b54-49c2-8e22-2ab059c911e5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3689be67-5f26-47db-bd1b-4ebdaa28f80a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
 		(path "/84db27fb-05a1-4b8a-9314-22a2c77cbcb4")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1455,8 +1829,8 @@
 			(uuid "4430da44-87b5-40c9-acb5-3cb2fc795f3c")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -1509,18 +1883,18 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1uF"
 			(at 0.07 0.61 180)
 			(layer "F.Fab")
 			(uuid "129ff1cc-b51e-443c-8b64-afb710a8853d")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1556,7 +1930,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cecf4978-5bdd-464f-be0e-14e4a646b98b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "daab9e37-bc9d-4123-b2b9-da7465a1eecf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "987f5922-84e7-4db0-9f9a-6f48bc1a6ecf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
 		(path "/a329e88d-9fa7-42cb-94c9-fe565a2619cf")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1665,8 +2080,8 @@
 			(uuid "e947e5b3-86b9-4adc-aa05-f5865cda1d2b")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -1708,7 +2123,7 @@
 		(descr "Converted using: scripting")
 		(tags "kb_params=eyJBbGlnbm1lbnRDaG9pY2UiOiAiTGVmdCIsICJDYXBMZWZ0Q2hvaWNlIjogIlsiLCAiQ2FwUmlnaHRDaG9pY2UiOiAiXSIsICJGb250Q29tYm9Cb3giOiAiVWJ1bnR1TW9uby1CIiwgIkhlaWdodEN0cmwiOiAiMC44IiwgIkxheWVyQ29tYm9Cb3giOiAiRi5TaWxrUyIsICJNdWx0aUxpbmVUZXh0IjogIkVYUDgiLCAiUGFkZGluZ0JvdHRvbUN0cmwiOiAiNCIsICJQYWRkaW5nTGVmdEN0cmwiOiAiNSIsICJQYWRkaW5nUmlnaHRDdHJsIjogIjUiLCAiUGFkZGluZ1RvcEN0cmwiOiAiNCIsICJXaWR0aEN0cmwiOiAiMC44In0=")
 		(property "Reference" "kibuzzard-631DD065"
-			(at 0 -0.62302 360)
+			(at 0 -0.62302 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "19765851-6ca6-4f6a-9f47-f7c524b1e4e4")
@@ -1720,7 +2135,7 @@
 			)
 		)
 		(property "Value" "G***"
-			(at 0 0.62302 360)
+			(at 0 0.62302 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "90881ec8-cf94-4803-b8c7-8046e8a9e046")
@@ -1852,7 +2267,7 @@
 		(descr "Converted using: scripting")
 		(tags "kb_params=eyJBbGlnbm1lbnRDaG9pY2UiOiAiTGVmdCIsICJDYXBMZWZ0Q2hvaWNlIjogIlsiLCAiQ2FwUmlnaHRDaG9pY2UiOiAiXSIsICJGb250Q29tYm9Cb3giOiAiVWJ1bnR1TW9uby1CIiwgIkhlaWdodEN0cmwiOiAiMC44IiwgIkxheWVyQ29tYm9Cb3giOiAiRi5TaWxrUyIsICJNdWx0aUxpbmVUZXh0IjogIlJQMjA0MCIsICJQYWRkaW5nQm90dG9tQ3RybCI6ICI1IiwgIlBhZGRpbmdMZWZ0Q3RybCI6ICI4IiwgIlBhZGRpbmdSaWdodEN0cmwiOiAiOCIsICJQYWRkaW5nVG9wQ3RybCI6ICI1IiwgIldpZHRoQ3RybCI6ICIwLjgifQ==")
 		(property "Reference" "kibuzzard-632CA15B"
-			(at 0 -0.675301 360)
+			(at 0 -0.675301 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "7a87e536-8846-426c-aeea-5445506be50b")
@@ -1864,7 +2279,7 @@
 			)
 		)
 		(property "Value" "G***"
-			(at 0 0.675301 360)
+			(at 0 0.675301 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e0dd8cde-8f3f-4a7a-aae8-e8cf870dcd56")
@@ -2058,18 +2473,18 @@
 				)
 			)
 		)
-		(property "Value" "1u"
-			(at 0.89 0.01 180)
+		(property "Value" "1uF"
+			(at 0.99 0.01 180)
 			(layer "F.Fab")
 			(uuid "1b74d655-05f6-4c5c-a197-04403790dcfb")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2105,7 +2520,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f782b4d4-6d02-43d9-8565-a92ccbc6d0aa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "817f698d-ef48-45a0-89bd-2af1dc3645dd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "32454f8a-f9de-415c-a76a-cbed84795d87")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
 		(path "/30bb182e-33d2-4dac-9952-a1de38463fc9")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2214,8 +2670,8 @@
 			(uuid "8903d6f1-654b-45ef-9e35-e346f71c71a9")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -2268,18 +2724,18 @@
 				)
 			)
 		)
-		(property "Value" "1k"
-			(at 0.02 0.57 90)
+		(property "Value" "1K"
+			(at 0.02 0.65 180)
 			(layer "F.Fab")
 			(uuid "00b11cf7-616b-4ece-842f-08f39dc58ece")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2315,7 +2771,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9c007111-08d0-4f2c-baab-a1830e43935e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "12a3d027-56cb-4e89-9f08-313a86813f82")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5441340c-0022-42e4-8b4b-aeea7ea78dec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
 		(path "/ed3176d9-ef9f-4809-8732-05dadfa6122a")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2424,8 +2921,8 @@
 			(uuid "7aaa5608-fa04-44cf-9f02-5bc9d32020f8")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -2478,17 +2975,17 @@
 			)
 		)
 		(property "Value" "470R"
-			(at -0.02 0.54 90)
+			(at -0.8 -0.03 180)
 			(layer "F.Fab")
 			(uuid "72686ce0-34bf-4941-b4ab-ff85b4d84120")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2524,7 +3021,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1eb6db40-0478-4893-818c-2dc8abb963f8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "77c83473-03da-4288-82cd-76f92e8cf939")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b3f96c24-3d3e-422b-890e-7377c29d60c6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
 		(path "/df43f698-8b30-4e7e-b37c-286e49efd9a7")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2633,8 +3171,8 @@
 			(uuid "58aaf64b-baca-4f74-9397-e499bd182daa")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -2652,7 +3190,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 11 "Net-(D2-Pad1)")
+			(net 54 "Net-(D2-K)")
 			(pintype "passive")
 			(uuid "e3f477b4-4ea8-48df-90bd-a5f69e531388")
 		)
@@ -2676,7 +3214,7 @@
 		(descr "Mounting Hole 2.2mm, no annular, M2")
 		(tags "mounting hole 2.2mm no annular m2")
 		(property "Reference" "H3"
-			(at 0 -3.2 270)
+			(at 0 -3.2 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "547b9631-2128-4d9f-b3d6-ead013deb6e2")
@@ -2688,17 +3226,17 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 0.3 0.8 270)
+			(at -0.24 0.13 0)
 			(layer "F.Fab")
 			(uuid "ef677362-ee6d-4ba8-bf69-ec5616a43b15")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2734,7 +3272,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f7ea738f-eef1-4241-8f6e-3c13589a1bc1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "15525b8c-dd91-49b1-8d9a-825ee0946cbc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2b11f445-1e4e-4c41-ad42-044a64633034")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "MountingHole*")
 		(path "/88465a2c-c288-4c13-bbe3-cdc8dcaed14e")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_circle
@@ -2760,13 +3339,13 @@
 			(uuid "0038b52a-3c4a-4d52-9ec3-6b6e58b399d2")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0.3 0 270)
+			(at 0.28 0.03 0)
 			(layer "F.Fab")
 			(uuid "83ec2d36-3dd1-4efd-b0c8-4fe4901ab487")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -2797,18 +3376,18 @@
 				)
 			)
 		)
-		(property "Value" "1k"
-			(at -0.91 0 360)
+		(property "Value" "1K"
+			(at -0.91 0 0)
 			(layer "F.Fab")
 			(uuid "601af331-421b-406c-b0f5-22098f7e8d24")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2844,7 +3423,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b16d2104-4a59-48e5-b87a-5c153508f951")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dac93501-d12c-4416-97f1-dada5708e95c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e26f06ec-5f50-4fc2-b9c2-0088f46254be")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
 		(path "/86887431-d81c-41c0-bb3e-b58b89abc927")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2948,13 +3568,13 @@
 			(uuid "bcd0e9bf-3b1b-4482-a829-f8c85bc58f4b")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -0.01 -0.02 360)
+			(at 0.01 0.02 0)
 			(layer "F.Fab")
 			(uuid "c1dc61fa-ec89-46d3-9506-0ada1d05eaff")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -2996,7 +3616,7 @@
 		(descr "Converted using: scripting")
 		(tags "kb_params=eyJBbGlnbm1lbnRDaG9pY2UiOiAiTGVmdCIsICJDYXBMZWZ0Q2hvaWNlIjogIlsiLCAiQ2FwUmlnaHRDaG9pY2UiOiAiXSIsICJGb250Q29tYm9Cb3giOiAiVWJ1bnR1TW9uby1CIiwgIkhlaWdodEN0cmwiOiAiMC43IiwgIkxheWVyQ29tYm9Cb3giOiAiRi5TaWxrUyIsICJNdWx0aUxpbmVUZXh0IjogIko0IiwgIlBhZGRpbmdCb3R0b21DdHJsIjogIjIuNSIsICJQYWRkaW5nTGVmdEN0cmwiOiAiMyIsICJQYWRkaW5nUmlnaHRDdHJsIjogIjMiLCAiUGFkZGluZ1RvcEN0cmwiOiAiMi41IiwgIldpZHRoQ3RybCI6ICIwLjcifQ==")
 		(property "Reference" "kibuzzard-631DCDB3"
-			(at 0 -0.467418 360)
+			(at 0 -0.467418 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "16b117a9-5e01-463b-b413-1e84532656a4")
@@ -3008,7 +3628,7 @@
 			)
 		)
 		(property "Value" "G***"
-			(at 0 0.467418 360)
+			(at 0 0.467418 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "49c2c97b-66ea-49d2-993e-408cdbb7536b")
@@ -3100,7 +3720,7 @@
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C10"
-			(at 0 1.14 270)
+			(at 0 1.14 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "5344f716-c0c5-4f4a-8e09-3e3fd81f449b")
@@ -3111,18 +3731,18 @@
 				)
 			)
 		)
-		(property "Value" "100n"
-			(at 0.01 0.6 270)
+		(property "Value" "0.1uF"
+			(at 0.78 0.04 0)
 			(layer "F.Fab")
 			(uuid "8fad8f15-eb5b-479c-b256-e462726c5150")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3158,7 +3778,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e2a70c59-d58f-4b8c-bf33-a2a011389f10")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "371528f2-f102-4091-b089-57a8deb5b2c3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3af17d73-3524-4809-bdac-5e0389135829")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
 		(path "/84ccfda4-4cb7-4b85-858d-9c503b45e771")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3262,13 +3923,13 @@
 			(uuid "ef237a6a-d21e-4478-abb4-1b704f22b0d3")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0.01 270)
+			(at 0 0.01 -90)
 			(layer "F.Fab")
 			(uuid "fecbc60b-9289-4b99-ada2-76f75b5d9041")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -3322,17 +3983,17 @@
 			)
 		)
 		(property "Value" "RP2040"
-			(at 0.15 0.87 270)
+			(at 0.15 0.87 -90)
 			(layer "F.Fab")
 			(uuid "4851957f-1616-47d3-8407-d0225d8ae01f")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "CIRCUITSTATE-QFN:RP2040-QFN-56"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3344,7 +4005,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheets.raspberrypi.org/rp2040/rp2040-datasheet.pdf"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3368,11 +4029,12 @@
 				)
 			)
 		)
-		(property "Author" "CIRCUITSTATE Electronics"
-			(at 0 0 270)
+		(property "MFR" ""
+			(at 0 0 90)
+			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "cc9593a1-db1c-4aa1-89ef-c355eb7ab375")
+			(uuid "c135f2b5-a904-4d05-bafa-fec50260a848")
 			(effects
 				(font
 					(size 1 1)
@@ -3380,11 +4042,12 @@
 				)
 			)
 		)
-		(property "License" "CC BY 4.0"
-			(at 0 0 270)
+		(property "MPN" ""
+			(at 0 0 90)
+			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a238e73a-2c3c-4fd0-ad8c-8b0bbcde33b8")
+			(uuid "47cdd461-5f18-4b18-8a4b-238e239ae0ba")
 			(effects
 				(font
 					(size 1 1)
@@ -3392,11 +4055,12 @@
 				)
 			)
 		)
-		(property "Revision" "1.3"
-			(at 0 0 270)
+		(property "Name" ""
+			(at 0 0 90)
+			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "bf95d8f1-1f2c-46e6-85a3-3a776a9ffe81")
+			(uuid "4f5046a8-a8a5-4a38-95d0-ea503c6b1e5d")
 			(effects
 				(font
 					(size 1 1)
@@ -3405,6 +4069,7 @@
 			)
 		)
 		(path "/4364e970-cbdb-4747-92a0-976b1ff1f1b8")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(zone_connect 2)
 		(attr smd)
@@ -3569,13 +4234,13 @@
 			(uuid "93d0a8d8-c407-4fdf-b1e9-cca3be4df3f4")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 270)
+			(at 0 0 -90)
 			(layer "F.Fab")
 			(uuid "21622844-86de-4854-aef4-64bcad456315")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -4111,7 +4776,7 @@
 			(size 0.2 0.875)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 55 "Net-(R6-Pad2)")
+			(net 64 "Net-(U3-USB-DM)")
 			(pinfunction "USB-DM")
 			(pintype "bidirectional")
 			(zone_connect 2)
@@ -4122,7 +4787,7 @@
 			(size 0.2 0.875)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 54 "Net-(R5-Pad2)")
+			(net 63 "Net-(U3-USB-DP)")
 			(pinfunction "USB-DP")
 			(pintype "bidirectional")
 			(zone_connect 2)
@@ -4378,17 +5043,17 @@
 			)
 		)
 		(property "Value" "27R"
-			(at 1.1 -0.01 360)
+			(at 1.1 -0.01 0)
 			(layer "F.Fab")
 			(uuid "122c7151-ff1f-48d2-953b-d50b914e330c")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4424,7 +5089,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c74253f9-daee-4b7e-8aa1-7f457932d77a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9944a8b9-24a5-462d-a1f9-5995011ea405")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4a36ca75-3a5b-45f4-a1b5-f8d1a616a7b1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
 		(path "/c94a9ac2-52b4-4efa-b7f5-1a7bf1b9777a")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4528,13 +5234,13 @@
 			(uuid "b38d5e2c-d6d2-4ae0-90ac-d479cf4eeba5")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0.03 -0.02 360)
+			(at 0.02 0.01 0)
 			(layer "F.Fab")
 			(uuid "c9b36daf-b53b-484d-b33b-9b8755097ed4")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -4552,7 +5258,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 54 "Net-(R5-Pad2)")
+			(net 63 "Net-(U3-USB-DP)")
 			(pintype "passive")
 			(uuid "b2fc41a8-5116-47a8-b90a-2044defdd707")
 		)
@@ -4587,18 +5293,18 @@
 				)
 			)
 		)
-		(property "Value" "100n"
-			(at -1.19 0.01 360)
+		(property "Value" "0.1uF"
+			(at -1.19 0.01 0)
 			(layer "F.Fab")
 			(uuid "9e3c3f64-9127-47ea-8e08-e7743163d506")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4634,7 +5340,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "abdf7b34-c426-40bf-96c8-0fcd0a88641c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3a50cf6f-6029-415f-a807-8b61a7870043")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3fc0ac75-8382-4d10-ae91-f27d5fcb2ea1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
 		(path "/8aa18bc9-fa82-4c22-8f19-48a530ace900")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4738,13 +5485,13 @@
 			(uuid "627c9f72-1097-4ec6-b48f-fe49d541a6cd")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0.01 -0.02 360)
+			(at 0.01 0.01 0)
 			(layer "F.Fab")
 			(uuid "dc5959a4-4f54-4a6a-ad3f-92ca9377b51c")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -4965,17 +5712,17 @@
 			)
 		)
 		(property "Value" "W25Q128JVS"
-			(at -0.8 0.18 -90)
+			(at -0.09 -0.59 0)
 			(layer "F.Fab")
 			(uuid "511d7bea-aea1-4872-bfe2-156da5f750a2")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4987,7 +5734,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.winbond.com/resource-files/w25q128jv_dtr%20revc%2003272018%20plus.pdf"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5011,7 +5758,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7ffdfd76-b362-436e-aa20-2229a01e716f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a817fb14-56ce-4409-9660-1c0407f2dfc2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "77f436de-356d-4c55-84e5-35551edf5869")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "SOIC*5.23x5.23mm*P1.27mm*")
 		(path "/3114cd48-bebc-4f4c-bd21-3f1daa69b0c4")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -5195,13 +5983,13 @@
 			(uuid "1560eef3-513c-4bcc-bb20-a05abd1a5f68")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -0.08 -0.02 -90)
+			(at -0.09 -0.02 0)
 			(layer "F.Fab")
 			(uuid "abd2306b-c252-4b2f-a2d3-6d653ec2593c")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -5316,18 +6104,18 @@
 				)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "1uF"
 			(at -0.95 -0.04 180)
 			(layer "F.Fab")
 			(uuid "7c0cbcdf-66a5-49c7-a54b-27d60350e6cc")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5363,7 +6151,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2b9ae3d0-1cf4-4e29-8620-331a845ecdf0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7d04d3cd-a12f-43cc-94c2-1ec758d79bb6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7a444722-dc02-47ef-9404-cd7513491054")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
 		(path "/a3051dd4-a70c-4af4-8e20-30b7043b7794")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -5467,13 +6296,13 @@
 			(uuid "7d257eb2-bf4a-4ca3-874f-1a766697f298")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0.02 180)
+			(at 0 -0.01 180)
 			(layer "F.Fab")
 			(uuid "ef8d5533-aecc-403b-ad08-5a9c1dd637c5")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -5527,17 +6356,17 @@
 			)
 		)
 		(property "Value" "DNP"
-			(at -0.04 0.53 90)
+			(at -0.81 0 180)
 			(layer "F.Fab")
 			(uuid "36c8ed7e-1577-4640-bd84-2c815c7aeea2")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5573,9 +6402,50 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3c5ae0d7-1d00-45ec-a4d6-fc8eacd05091")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7d5ecba0-9314-4ec5-b91b-b03504c1f0b7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "37f8cae0-c8ee-4b2c-b193-b14ee422782c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
 		(path "/32ab5eaf-3e1a-433c-aa49-2c38805d4d7c")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
-		(attr smd)
+		(attr smd dnp)
 		(fp_line
 			(start -0.167621 0.38)
 			(end 0.167621 0.38)
@@ -5682,8 +6552,8 @@
 			(uuid "6c651ede-8ecd-486d-8e60-7fb7a7d141cd")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -5736,18 +6606,18 @@
 				)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "1uF"
 			(at -0.91 -0.01 180)
 			(layer "F.Fab")
 			(uuid "7cc2c224-8c64-4df1-9364-58c0ae769d34")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5783,7 +6653,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b962b2a9-bce2-449d-a348-0d4c47c7c9cd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a84b3522-4069-49cf-adbb-c188b0ca7c10")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cda89348-c47c-44b9-a93b-059f0962e5fd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
 		(path "/0ffd6079-b011-4e0c-a262-baa6829134a4")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -5887,13 +6798,13 @@
 			(uuid "f4f3eab8-6b1f-49d3-962f-47b1af56c607")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -0.04 0.03 180)
+			(at -0.01 -0.02 180)
 			(layer "F.Fab")
 			(uuid "06a298f7-01d7-4600-97cd-d060996a492b")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -5946,18 +6857,18 @@
 				)
 			)
 		)
-		(property "Value" "100n"
-			(at 0.02 0.57 270)
+		(property "Value" "0.1uF"
+			(at 0.82 0.07 0)
 			(layer "F.Fab")
 			(uuid "7cdeeeea-09a9-495f-bb7a-de4cbd62bd0f")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5993,7 +6904,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7e3dc2b1-8279-4143-b051-94a552702295")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5c280e45-39a8-48f1-a85c-3ef9fadbc447")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ed5d2361-4ee3-463a-a899-cd3855ae67aa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
 		(path "/5ca416cc-ec40-4c31-981d-75ced0c8cefb")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -6097,13 +7049,13 @@
 			(uuid "8d7bcf52-007d-4371-ad4e-ad9b7318e418")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0.01 270)
+			(at 0 0.01 -90)
 			(layer "F.Fab")
 			(uuid "eb81b365-8c84-4cda-a4d6-bc9f0219d478")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -6157,17 +7109,17 @@
 			)
 		)
 		(property "Value" "SWD"
-			(at -0.74 2.55 270)
+			(at 0.01 1.89 0)
 			(layer "F.Fab")
 			(uuid "1e1d7ef2-1222-4056-b052-84f44c1f5d2d")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6203,7 +7155,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "09533de7-5ec7-45ff-9755-ef16e6b25f19")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "43a1d83d-76d3-447b-a126-7f1780b5cba2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" "SWD"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "59a0ef9f-4ebb-408f-94cc-f57362bbdccf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/cf26a649-02cc-4d55-8c40-643597b567a5")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -6307,13 +7300,13 @@
 			(uuid "b09b80a8-0196-401b-9401-3a8e450337eb")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 2.54 270)
+			(at 0.01 2.43 0)
 			(layer "F.Fab")
 			(uuid "e692222e-21b2-4a85-9d5d-00d5e50eb9e4")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -6414,7 +7407,7 @@
 		(descr "Two-pin SMD solder jumper in a size similar to 0402")
 		(tags "jumper solder")
 		(property "Reference" "JP1"
-			(at 1.48 0.55 270)
+			(at 1.48 0.55 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "21bec28f-4535-4098-ae19-8018b2025e74")
@@ -6431,12 +7424,12 @@
 			(uuid "0f451d81-ad92-4084-ad62-504680557925")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "CIRCUITSTATE_Jumper_SMD:Solder-Jumper_2P_Open_0402"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6472,7 +7465,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e583dbb7-8b94-47e2-98e0-f73e308db568")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fb3fff32-abee-472d-a660-849e4f22051c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" "AREF_SEL"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aa6e293a-bd74-44ed-a26a-3102467cd5d9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "SolderJumper*Open*")
 		(path "/8b8a273f-2f26-4b8b-9ca2-9e357c856900")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -6601,8 +7635,8 @@
 			(uuid "9150b4ff-8df8-437c-8654-ef6214f02b5d")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -6638,7 +7672,7 @@
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R9"
-			(at 0 -2.37 360)
+			(at 0 -2.37 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "fe1ee527-7160-4914-bb0a-50f55a77764d")
@@ -6650,17 +7684,17 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 0 -0.64 360)
+			(at 0 -0.64 0)
 			(layer "F.Fab")
 			(uuid "23eb4714-6d4e-4848-9b61-16ab33f36db0")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6696,7 +7730,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3940111e-0c1f-4496-a339-4aca9b272b93")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ac532f9f-5945-45a5-b023-06d87024d936")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6454822b-e8f5-41a5-888d-ac8a031a7ff7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
 		(path "/75515b1e-1051-47cd-85e7-08dcf31d2c0e")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -6800,13 +7875,13 @@
 			(uuid "92fde3fc-bd95-40ae-bf26-cfbc659882b7")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -0.01 -0.02 360)
+			(at -0.01 -0.02 0)
 			(layer "F.Fab")
 			(uuid "56f79555-7945-4494-b253-3482b488081c")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -6859,18 +7934,18 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1uF"
 			(at 1.22 -0.02 180)
 			(layer "F.Fab")
 			(uuid "bdb37f89-4136-4d72-9225-80a2c30dbc04")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6906,7 +7981,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "224e69ae-9227-45b7-b956-c99bfc6be9b7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4002f1fe-504a-45b9-aa75-d55c6565aa55")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "552131fa-d102-4c2b-81ba-cafc4215c1a6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
 		(path "/b8fcd96d-7790-4f7c-90c4-61bf21ad934e")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -7010,13 +8126,13 @@
 			(uuid "1efa0dda-a3d0-4313-915f-360699a2dc89")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0.01 180)
+			(at 0 -0.01 180)
 			(layer "F.Fab")
 			(uuid "30a5751d-9476-4006-8eb4-01e750616181")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -7069,18 +8185,18 @@
 				)
 			)
 		)
-		(property "Value" "100n"
-			(at 0.02 0.55 360)
+		(property "Value" "0.1uF"
+			(at 0.02 0.55 0)
 			(layer "F.Fab")
 			(uuid "590db64a-3afd-4ba7-b092-c8c2c57d1d1c")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7116,7 +8232,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "971e2592-3beb-4aa5-b128-62f5263fca48")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a98babf5-d714-44ff-ab0e-c08ccecac888")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e924fa29-0249-411a-89a3-90e1d8bd7f22")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
 		(path "/71067f37-31cc-4381-a8c5-fcaf2d565875")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -7220,13 +8377,13 @@
 			(uuid "982d580d-ee09-4078-8be5-1a4455376ea7")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0.02 -0.01 360)
+			(at 0.01 0.01 0)
 			(layer "F.Fab")
 			(uuid "93b4f245-491a-435e-987d-ad4b9e4bfc1b")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -7279,18 +8436,18 @@
 				)
 			)
 		)
-		(property "Value" "10u"
-			(at 0.1 0.72 270)
+		(property "Value" "10uF"
+			(at 0.1 0.72 -90)
 			(layer "F.Fab")
 			(uuid "3f102cf7-e5a8-4d87-a116-1dd370676133")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7326,7 +8483,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ab2c5cd2-f3d4-4f48-9ddb-fdf7476ced1e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "139570ff-e26b-43e9-a4b6-89b99e7dc774")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "39eda273-eefd-479b-93d8-42678cc16a48")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
 		(path "/eff3d764-c3c9-4731-82aa-7a3526f3d3e1")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -7430,13 +8628,13 @@
 			(uuid "5585b0fb-a076-45a6-a374-c83ba70ffa93")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 270)
+			(at 0 0 -90)
 			(layer "F.Fab")
 			(uuid "2b20401f-5fa5-43e1-bc49-dc66c8880920")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -7478,7 +8676,7 @@
 		(descr "Mounting Hole 2.2mm, no annular, M2")
 		(tags "mounting hole 2.2mm no annular m2")
 		(property "Reference" "H2"
-			(at 0 -3.2 270)
+			(at 0 -3.2 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "6feabf25-c225-4661-a15f-5fbd6f4d3ead")
@@ -7490,17 +8688,17 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 0.3 0.7 270)
+			(at -0.29 0.08 0)
 			(layer "F.Fab")
 			(uuid "3ed1e957-6b8e-447c-8a0a-73ac43e11833")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7536,7 +8734,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fa052165-f63f-4f85-9b3f-20c55180f69b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "59a51a1c-99ca-4336-ba67-2963dea0c5cc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "77c7a6d9-8094-4297-8b44-be82fe314106")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "MountingHole*")
 		(path "/e0c24c1b-20cf-4dec-ab55-52bb93b238a3")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_circle
@@ -7562,13 +8801,13 @@
 			(uuid "845f4396-b1b7-4fa2-b840-746828d10c11")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0.3 0 270)
+			(at 0.18 0.03 0)
 			(layer "F.Fab")
 			(uuid "14e10b63-436a-4ad1-8d2a-2708aa6b9ab6")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -7599,18 +8838,18 @@
 				)
 			)
 		)
-		(property "Value" "USB_C_Receptacle_USB2.0"
+		(property "Value" "USB-C-2.0"
 			(at -0.185 -1.75 90)
 			(layer "F.Fab")
 			(uuid "52c79b0d-efa1-4a92-a60e-d301795d92d0")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "CIRCUITSTATE_Connector_USB:Korean-Hroparts-Elec_TYPE-C-31-M-12"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7622,7 +8861,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7646,7 +8885,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "150641fc-f0f4-4f11-a440-101707fdd1cb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6b5a866c-fbf4-4bd3-8e84-68a735d29f19")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" "USB-C"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e275e7d4-82da-49dc-bee8-92d79fe34178")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "USB*C*Receptacle*")
 		(path "/0c79e9b4-6744-4ebd-b617-017bbd56af14")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -7933,7 +9213,7 @@
 			(at -1.25 -5.1 270)
 			(size 0.3 1.45)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 60 "Net-(J2-PadA5)")
+			(net 56 "Net-(J2-CC1)")
 			(pinfunction "CC1")
 			(pintype "bidirectional")
 			(uuid "3034a649-5aea-4f38-beb0-edb45b889501")
@@ -7960,7 +9240,7 @@
 			(at 1.25 -5.1 270)
 			(size 0.3 1.45)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 61 "unconnected-(J2-PadA8)")
+			(net 60 "unconnected-(J2-SBU1-PadA8)")
 			(pinfunction "SBU1")
 			(pintype "bidirectional+no_connect")
 			(uuid "dba1846e-f94f-4b4a-9ea2-b375bdcaf1ec")
@@ -8005,7 +9285,7 @@
 			(at 1.75 -5.1 270)
 			(size 0.3 1.45)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 62 "Net-(J2-PadB5)")
+			(net 58 "Net-(J2-CC2)")
 			(pinfunction "CC2")
 			(pintype "bidirectional")
 			(uuid "b8dc7f09-e530-491a-aac7-43e2c5542926")
@@ -8032,7 +9312,7 @@
 			(at -1.75 -5.1 270)
 			(size 0.3 1.45)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 63 "unconnected-(J2-PadB8)")
+			(net 57 "unconnected-(J2-SBU2-PadB8)")
 			(pinfunction "SBU2")
 			(pintype "bidirectional+no_connect")
 			(uuid "39088ba0-d8bf-4400-a745-9da6cfb08327")
@@ -8140,12 +9420,12 @@
 			(uuid "4e7bf94e-863f-48bf-b38a-35bdd7a4ccfd")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8181,7 +9461,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d3fc1259-b23c-48b9-8959-0943bae23a1e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5c7c4bc3-072d-432f-9830-ca9ba1a4fa9c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f4eb0979-08f5-440e-83da-28dfebb9e2b4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
 		(path "/d13485f5-95f8-46f7-a59d-07b602630d85")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8285,13 +9606,13 @@
 			(uuid "f4bb08db-cd2b-4012-b51f-e1bdf5bd753a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -0.01 0.02 180)
+			(at 0 -0.01 180)
 			(layer "F.Fab")
 			(uuid "f56dea85-7d34-4e67-8fd6-2c420ce3e4b8")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -8300,7 +9621,7 @@
 			(size 0.735 0.62)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 7 "Net-(C16-Pad1)")
+			(net 7 "Net-(U2-BP)")
 			(pintype "passive")
 			(uuid "a54d6d27-44a3-4044-956b-0199422d218e")
 		)
@@ -8344,17 +9665,17 @@
 			)
 		)
 		(property "Value" "VR1_CE"
-			(at -0.02 0.56 360)
+			(at -0.02 0.65 0)
 			(layer "F.Fab")
 			(uuid "7aa36023-3aba-4f2c-9aea-0147b1fd6f5d")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "CIRCUITSTATE_Jumper_SMD:Solder-Jumper_2P_Open_0402"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8390,7 +9711,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e5d0e60e-6b8f-4691-955a-692d49e9bad3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "88bdd8d3-f554-4736-a733-eeb38d6ad89f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" "VR1_CE"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a218c4de-21c8-42eb-8753-747b65d868e4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "SolderJumper*Open*")
 		(path "/9a1a99d7-8c5c-4bc2-a7b6-3331f880ae32")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8514,13 +9876,13 @@
 			(uuid "e5e18130-5508-43f3-a8ef-790a5bf415d0")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "56a56f75-add0-46a1-9b8f-aa68a14cd3cb")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -8569,17 +9931,17 @@
 			)
 		)
 		(property "Value" "5.1K"
-			(at 0 0.58 90)
+			(at -0.82 0 180)
 			(layer "F.Fab")
 			(uuid "d8fcab5f-1323-4704-83aa-3834bde75dad")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8615,7 +9977,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9247a40b-a066-4fb3-8ce7-0defa5893a74")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "16a7e960-5e6b-477a-ac46-52f6babc5206")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9d78f96c-8d81-4037-8070-c035036c942d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
 		(path "/792536bd-7e90-4508-ac73-4befc5540582")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8724,8 +10127,8 @@
 			(uuid "c987a3f8-5342-4455-b422-809d713ed993")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -8734,7 +10137,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 62 "Net-(J2-PadB5)")
+			(net 58 "Net-(J2-CC2)")
 			(pintype "passive")
 			(uuid "4793e34b-d80e-47ba-869f-8049aad7a430")
 		)
@@ -8766,7 +10169,7 @@
 		(descr "SMD Crystal SERIES SMD3225/4 http://www.txccrystal.com/images/pdf/7m-accuracy.pdf, 3.2x2.5mm^2 package")
 		(tags "SMD SMT crystal")
 		(property "Reference" "Y1"
-			(at 0 -2.45 270)
+			(at 0 -2.45 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "1fd506a8-569c-4761-9dce-5282fdef3766")
@@ -8778,17 +10181,17 @@
 			)
 		)
 		(property "Value" "YIC-12M20P2/XT324-10/10"
-			(at 0.2 1.69 270)
+			(at 0.2 1.69 -90)
 			(layer "F.Fab")
 			(uuid "765a22ad-9c6f-4a33-893c-aece68a2d6fe")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8824,7 +10227,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1879d53b-ee4d-4ee4-8acd-62e2646653dc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "23a34d42-78da-49a1-ac12-e5cf46246599")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "feee68d1-675c-49d5-b6d7-8b269bfc9d51")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Crystal*")
 		(path "/f231b306-c76a-4873-92cf-fde929b2d11d")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8938,13 +10382,13 @@
 			(uuid "4f51e3ec-da84-4973-8d8e-2d500d9d9251")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 270)
+			(at -0.03 0 0)
 			(layer "F.Fab")
 			(uuid "c9c2c8a6-4057-4e62-86dc-c1933d33aa89")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -9015,17 +10459,17 @@
 			)
 		)
 		(property "Value" "470R"
-			(at 0.05 -0.53 180)
+			(at -0.01 -0.59 180)
 			(layer "F.Fab")
 			(uuid "0ea93193-3eac-41e2-b663-94ee78bac8fc")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9061,7 +10505,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7a09fee9-4244-4b8d-9aa8-912d9532aac3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "00266b73-fa17-4631-92e4-cdc74c2eb657")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1abbec36-1f2d-409d-8d02-42a9c510edae")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
 		(path "/94ae1831-1f13-45ec-b1d9-920520b93f20")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -9170,8 +10655,8 @@
 			(uuid "7649717e-e653-4b93-9240-4ab21a8ab8b6")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -9189,7 +10674,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 57 "Net-(D3-Pad1)")
+			(net 55 "Net-(D3-K)")
 			(pintype "passive")
 			(uuid "e01aaef3-cf27-4862-94f3-dd2a24b8b808")
 		)
@@ -9223,18 +10708,18 @@
 				)
 			)
 		)
-		(property "Value" "PMEG4005EJ"
+		(property "Value" "BS5817WS"
 			(at 0.13 1.06 180)
 			(layer "F.Fab")
 			(uuid "6fa9a3ee-8a21-4b28-9b74-41c3c5b7146e")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9246,7 +10731,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://evelta.com/content/datasheets/273-B5817WS.pdf"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9270,7 +10755,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5ab7a62c-a380-4dab-b084-081055aea107")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d479eb57-4686-4b3a-b2b9-e4ccabcf888f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2e642f08-4fcb-4eb9-8e65-0f83d1fe030d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "D*SOD?123F*")
 		(path "/22751df6-f1aa-4163-82b5-17e77cc19cae")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -9444,13 +10970,13 @@
 			(uuid "3108a00d-9b9c-49e7-b228-327a7bd1b1b6")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.26 0.04 -90)
+			(at 1.31 0.03 0)
 			(layer "F.Fab")
 			(uuid "9d78e8df-25f8-490c-86a0-55bae8acfd03")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -9502,18 +11028,18 @@
 				)
 			)
 		)
-		(property "Value" "POW_LED"
-			(at 0.1 0.78 180)
+		(property "Value" "Red"
+			(at 0.02 0.72 180)
 			(layer "F.Fab")
 			(uuid "b5871708-304b-4786-8934-11e3bda1680a")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9549,7 +11075,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "edef99d0-cb76-4069-862d-753aec43891a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "10c5ff17-c903-4383-a425-ee36100bb255")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" "POW_LED"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3c59bf9e-2b5f-497e-b0e3-f181b257630b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/add2cbd7-932e-4899-9eb8-8a491d562f8a")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -9678,8 +11245,8 @@
 			(uuid "18108666-345d-4b78-a855-fc7102ae6733")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -9688,7 +11255,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 57 "Net-(D3-Pad1)")
+			(net 55 "Net-(D3-K)")
 			(pinfunction "K")
 			(pintype "passive")
 			(uuid "84c45562-9cee-4e7b-a421-5e0110477b96")
@@ -9723,7 +11290,7 @@
 		(descr "Mounting Hole 2.2mm, no annular, M2")
 		(tags "mounting hole 2.2mm no annular m2")
 		(property "Reference" "H4"
-			(at 0 -3.2 270)
+			(at 0 -3.2 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "a4bcd6fc-bc8d-43d2-8b17-0f235080e813")
@@ -9735,17 +11302,17 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 0.2 0.8 270)
+			(at -0.33 0.05 0)
 			(layer "F.Fab")
 			(uuid "6cfa5042-d9b4-4d7a-99aa-83c6fe7866c0")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9781,7 +11348,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "abeae886-528f-4ed6-827b-577fc9044a79")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9307e8ca-288a-4682-bff6-e4d2dabfe1ce")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dd1c0663-747f-445a-bc53-3e40daba916e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "MountingHole*")
 		(path "/b9a4a608-976c-4e73-ae0a-e392920dd058")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_circle
@@ -9807,13 +11415,13 @@
 			(uuid "69b5d795-8541-41e0-b1bb-b5324f350e49")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0.3 0 270)
+			(at 0.25 0.01 0)
 			(layer "F.Fab")
 			(uuid "15d34230-a9d2-4697-8d18-0ea964595b26")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -9850,12 +11458,12 @@
 			(uuid "8fcd64b5-563c-4f0e-9344-4f00c46018f5")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_USB:USB_Micro-B_Molex-105017-0001"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9891,9 +11499,50 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1940a239-5f2b-4661-8c2e-414a1d2ff839")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e132172f-74a7-45d4-b29c-e4db8f446117")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" "USB-Micro"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f51b3f18-ff8f-4e07-9694-5ee537b98b5c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "USB*")
 		(path "/ffc5429d-8bd9-4da8-8b09-450ee1ef266a")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
-		(attr smd)
+		(attr smd dnp)
 		(fp_line
 			(start -3.9 2.6375)
 			(end -3.9 2.3875)
@@ -10131,8 +11780,8 @@
 			(uuid "0ee7cb2e-94f0-4b40-a42d-a2dde81364bb")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -10167,7 +11816,7 @@
 			(at 0.65 -1.4625 270)
 			(size 0.4 1.35)
 			(layers "F.Cu")
-			(net 58 "unconnected-(J6-Pad4)")
+			(net 61 "unconnected-(J6-ID-Pad4)")
 			(pinfunction "ID")
 			(pintype "passive+no_connect")
 			(uuid "5f5dfe8d-c825-42e9-b237-8e58c092d81b")
@@ -10293,7 +11942,7 @@
 		(descr "Converted using: scripting")
 		(tags "kb_params=eyJBbGlnbm1lbnRDaG9pY2UiOiAiTGVmdCIsICJDYXBMZWZ0Q2hvaWNlIjogIlsiLCAiQ2FwUmlnaHRDaG9pY2UiOiAiXSIsICJGb250Q29tYm9Cb3giOiAiVWJ1bnR1TW9uby1CIiwgIkhlaWdodEN0cmwiOiAiMC43IiwgIkxheWVyQ29tYm9Cb3giOiAiRi5TaWxrUyIsICJNdWx0aUxpbmVUZXh0IjogIko1IiwgIlBhZGRpbmdCb3R0b21DdHJsIjogIjIuNSIsICJQYWRkaW5nTGVmdEN0cmwiOiAiMyIsICJQYWRkaW5nUmlnaHRDdHJsIjogIjMiLCAiUGFkZGluZ1RvcEN0cmwiOiAiMi41IiwgIldpZHRoQ3RybCI6ICIwLjcifQ==")
 		(property "Reference" "kibuzzard-631DCE60"
-			(at 0 -0.467418 360)
+			(at 0 -0.467418 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "82a05c7e-5f75-4763-b683-c4dc8fc41b51")
@@ -10305,7 +11954,7 @@
 			)
 		)
 		(property "Value" "G***"
-			(at 0 0.467418 360)
+			(at 0 0.467418 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "5645b19c-cd3f-4737-bead-8c0437d68aa5")
@@ -10389,7 +12038,7 @@
 		(descr "Mounting Hole 2.2mm, no annular, M2")
 		(tags "mounting hole 2.2mm no annular m2")
 		(property "Reference" "H1"
-			(at 0 -3.2 270)
+			(at 0 -3.2 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "db07c076-f679-49ca-bd81-cab54b8af342")
@@ -10401,17 +12050,17 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 0.2 0.8 270)
+			(at -0.27 0.1 0)
 			(layer "F.Fab")
 			(uuid "9c2b821e-73db-4f9d-8b2a-383ddbcb056b")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10447,7 +12096,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8b0bb935-ce97-4fae-af6b-2441926b441e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cb96beb5-fc2a-475d-8358-53db724798b2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d0debf74-d070-488c-a42e-2a1830c4c747")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "MountingHole*")
 		(path "/8997aa59-3dc4-4366-bb6f-6ad210d46e0e")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_circle
@@ -10473,24 +12163,13 @@
 			(uuid "fdc1dd9b-5711-4ed3-824f-f4f16acf11ea")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0.3 0 270)
-			(layer "F.Fab")
-			(uuid "49297e23-8a2f-4b7b-b179-d8ff6433f831")
-			(effects
-				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
-				)
-			)
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0.3 0 270)
+			(at 0.21 -0.01 0)
 			(layer "F.Fab")
 			(uuid "5943e963-c2f3-4b61-b07e-e1d46573d4bf")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -10509,7 +12188,7 @@
 		(descr "C&K Components, PTS 820 Series, Microminiature SMT Top Actuated, 3.9 x 2.9 mm")
 		(tags "SPST Button Switch")
 		(property "Reference" "SW1"
-			(at 0 -3 360)
+			(at 0 -3 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "ada56929-1df0-4f68-9076-dc79abbfc2b9")
@@ -10521,17 +12200,17 @@
 			)
 		)
 		(property "Value" "Reset"
-			(at 0.02 1.75 360)
+			(at 0.02 1.75 0)
 			(layer "F.Fab")
 			(uuid "8647507a-4a78-4600-a131-09b00e5274ac")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "CIRCUITSTATE_Switch_SMD:CK_SW_SPST_UK-B0273-SP25Y"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10567,7 +12246,47 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "af390f5c-edce-4372-a3a7-4006f30bc2e1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d52d16b9-1c62-4e10-bb1f-f0fce67fd88d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" "Reset"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e7b2872b-cd7e-47e2-90e5-ef8abb097789")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/e3028438-930b-4326-85b8-c55f49641e4a")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -10822,17 +12541,17 @@
 			)
 		)
 		(property "Value" "30pF"
-			(at -0.03 -0.6 360)
+			(at -0.03 -0.6 0)
 			(layer "F.Fab")
 			(uuid "7389c620-4f25-4b96-8ba8-6913a7f49f87")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10868,7 +12587,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7c490fe4-dbae-4013-888f-d010b5e98159")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6dbf5a42-1b73-4dce-8046-997a8d2d580f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d67fbd2b-b5ae-4082-b177-b16703e07422")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
 		(path "/fe6628db-3646-4780-9c0c-86dfe02dbbef")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -10972,13 +12732,13 @@
 			(uuid "e5149b6a-76fa-4027-b982-911a846905e2")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.02 360)
+			(at 0 0.01 0)
 			(layer "F.Fab")
 			(uuid "5d8ef07a-a550-43f9-b44e-86f0707f583a")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -11012,145 +12772,6 @@
 			)
 		)
 	)
-	(footprint "kibuzzard-631DCCA6"
-		(locked yes)
-		(layer "F.Cu")
-		(uuid "c3b46f4f-cf78-4e77-8bd2-d4f8b0db3b5b")
-		(at 140.3 96.7)
-		(descr "Converted using: scripting")
-		(tags "kb_params=eyJBbGlnbm1lbnRDaG9pY2UiOiAiTGVmdCIsICJDYXBMZWZ0Q2hvaWNlIjogIigiLCAiQ2FwUmlnaHRDaG9pY2UiOiAiKSIsICJGb250Q29tYm9Cb3giOiAiVWJ1bnR1TW9uby1CIiwgIkhlaWdodEN0cmwiOiAiMC43IiwgIkxheWVyQ29tYm9Cb3giOiAiRi5TaWxrUyIsICJNdWx0aUxpbmVUZXh0IjogIlVCVVQiLCAiUGFkZGluZ0JvdHRvbUN0cmwiOiAiMiIsICJQYWRkaW5nTGVmdEN0cmwiOiAiMSIsICJQYWRkaW5nUmlnaHRDdHJsIjogIjEiLCAiUGFkZGluZ1RvcEN0cmwiOiAiMiIsICJXaWR0aEN0cmwiOiAiMC43In0=")
-		(property "Reference" "kibuzzard-631DCCA6"
-			(at 0 -0.448157 360)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "ec7a7bb7-eb1c-4d31-8811-ea0f78c106f0")
-			(effects
-				(font
-					(size 0.0254 0.0254)
-					(thickness 0.000003)
-				)
-			)
-		)
-		(property "Value" "G***"
-			(at 0 0.448157 360)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "13c25171-d962-4940-816a-eeb18f1b6adb")
-			(effects
-				(font
-					(size 0.0254 0.0254)
-					(thickness 0.000003)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9c4df09a-fa26-4863-b45f-485479c63a23")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "def74ab0-8251-4377-83fc-7c07cb19b17e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "24ac77b3-9eec-4cac-9c4e-81ee104aea7f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(attr exclude_from_pos_files exclude_from_bom)
-		(fp_poly
-			(pts
-				(xy -0.366713 0.039449) (xy -0.366713 0.226139) (xy -0.335042 0.229473) (xy -0.301149 0.230584)
-				(xy -0.255588 0.226695) (xy -0.216138 0.212249) (xy -0.187801 0.182245) (xy -0.176689 0.132794)
-				(xy -0.208359 0.061119) (xy -0.29337 0.039449) (xy -0.366713 0.039449)
-			)
-			(stroke
-				(width 0)
-				(type solid)
-			)
-			(fill solid)
-			(layer "F.SilkS")
-			(uuid "9faee765-a749-400a-b107-fb13aef236a7")
-		)
-		(fp_poly
-			(pts
-				(xy -0.313373 -0.073898) (xy -0.234474 -0.096679) (xy -0.207804 -0.159464) (xy -0.215583 -0.198914)
-				(xy -0.236696 -0.22225) (xy -0.267811 -0.233363) (xy -0.304483 -0.236141) (xy -0.336709 -0.235029)
-				(xy -0.366713 -0.231696) (xy -0.366713 -0.073898) (xy -0.313373 -0.073898)
-			)
-			(stroke
-				(width 0)
-				(type solid)
-			)
-			(fill solid)
-			(layer "F.SilkS")
-			(uuid "b43088cd-bc2c-4686-b7c2-9999950159e3")
-		)
-		(fp_poly
-			(pts
-				(xy -1.07569 -0.447649) (xy -1.07569 -0.347266) (xy -0.937895 -0.347266) (xy -0.937895 0.082788)
-				(xy -0.93345 0.155575) (xy -0.918448 0.202803) (xy -0.889 0.228362) (xy -0.841216 0.236141) (xy -0.793433 0.228362)
-				(xy -0.763429 0.202248) (xy -0.747871 0.154464) (xy -0.743426 0.081677) (xy -0.743426 -0.347266)
-				(xy -0.606743 -0.347266) (xy -0.606743 0.091678) (xy -0.609521 0.148908) (xy -0.503396 0.329486)
-				(xy -0.503396 -0.338376) (xy -0.41783 -0.350044) (xy -0.325596 -0.355044) (xy -0.255032 -0.351016)
-				(xy 1.07569 -0.347266) (xy 1.07569 -0.233918) (xy 0.894556 -0.233918) (xy 0.894556 0.340598) (xy 0.756761 0.340598)
-				(xy 0.756761 -0.233918) (xy 0.575628 -0.233918) (xy 0.575628 -0.347266) (xy 1.07569 -0.347266) (xy -0.255032 -0.351016)
-				(xy -0.198914 -0.338931) (xy -0.122238 -0.296704) (xy -0.084455 -0.238363) (xy -0.074454 -0.173911)
-				(xy -0.080427 -0.127794) (xy -0.098346 -0.087233) (xy -0.162243 -0.027226) (xy -0.103485 0.002778)
-				(xy -0.067231 0.041672) (xy -0.048478 0.086122) (xy -0.042228 0.132794) (xy -0.047506 0.189885)
-				(xy -0.063341 0.236696) (xy -0.120571 0.303371) (xy -0.16002 0.324763) (xy -0.206137 0.338931) (xy 0.267811 0.355044)
-				(xy 0.206554 0.35046) (xy 0.156131 0.336709) (xy 0.084455 0.283924) (xy 0.061674 0.245864) (xy 0.046673 0.200581)
-				(xy 0.038338 0.148908) (xy 0.03556 0.091678) (xy 0.03556 -0.347266) (xy 0.173355 -0.347266) (xy 0.173355 0.082788)
-				(xy 0.1778 0.155575) (xy 0.192802 0.202803) (xy 0.22225 0.228362) (xy 0.270034 0.236141) (xy 0.317818 0.228362)
-				(xy 0.347821 0.202248) (xy 0.363379 0.154464) (xy 0.367824 0.081677) (xy 0.367824 -0.347266) (xy 0.504508 -0.347266)
-				(xy 0.504508 0.091678) (xy 0.501729 0.148908) (xy 0.493395 0.200581) (xy 0.478115 0.245864) (xy 0.454501 0.283924)
-				(xy 0.422275 0.314345) (xy 0.381159 0.336709) (xy 0.330041 0.35046) (xy 0.267811 0.355044) (xy -0.206137 0.338931)
-				(xy -0.257393 0.346849) (xy -0.312261 0.349488) (xy -0.358656 0.348238) (xy -0.406718 0.344488)
-				(xy -0.455335 0.338237) (xy -0.503396 0.329486) (xy -0.609521 0.148908) (xy -0.617855 0.200581)
-				(xy -0.633135 0.245864) (xy -0.656749 0.283924) (xy -0.688975 0.314345) (xy -0.730091 0.336709)
-				(xy -0.781209 0.35046) (xy -0.843439 0.355044) (xy -0.904696 0.35046) (xy -0.955119 0.336709) (xy -1.026795 0.283924)
-				(xy -1.049576 0.245864) (xy -1.064578 0.200581) (xy -1.072912 0.148908) (xy -1.07569 0.091678) (xy -1.07569 -0.347266)
-				(xy -1.07569 -0.447649) (xy -1.121992 -0.447649) (xy -1.209324 -0.439047) (xy -1.2933 -0.413573)
-				(xy -1.370692 -0.372206) (xy -1.438527 -0.316535) (xy -1.494198 -0.2487) (xy -1.535565 -0.171308)
-				(xy -1.561039 -0.087332) (xy -1.569641 0) (xy -1.561039 0.087332) (xy -1.535565 0.171308) (xy -1.494198 0.2487)
-				(xy -1.438527 0.316535) (xy -1.370692 0.372206) (xy -1.2933 0.413573) (xy -1.209324 0.439047) (xy -1.121992 0.447649)
-				(xy -1.07569 0.447649) (xy 1.07569 0.447649) (xy 1.121992 0.447649) (xy 1.209324 0.439047) (xy 1.2933 0.413573)
-				(xy 1.370692 0.372206) (xy 1.438527 0.316535) (xy 1.494198 0.2487) (xy 1.535565 0.171308) (xy 1.561039 0.087332)
-				(xy 1.569641 0) (xy 1.561039 -0.087332) (xy 1.535565 -0.171308) (xy 1.494198 -0.2487) (xy 1.438527 -0.316535)
-				(xy 1.370692 -0.372206) (xy 1.2933 -0.413573) (xy 1.209324 -0.439047) (xy 1.121992 -0.447649) (xy 1.07569 -0.447649)
-				(xy -1.07569 -0.447649)
-			)
-			(stroke
-				(width 0)
-				(type solid)
-			)
-			(fill solid)
-			(layer "F.SilkS")
-			(uuid "95b0edba-862b-461a-93f2-df9763306a37")
-		)
-	)
 	(footprint "kibuzzard-631DCCC7"
 		(locked yes)
 		(layer "F.Cu")
@@ -11159,7 +12780,7 @@
 		(descr "Converted using: scripting")
 		(tags "kb_params=eyJBbGlnbm1lbnRDaG9pY2UiOiAiTGVmdCIsICJDYXBMZWZ0Q2hvaWNlIjogIigiLCAiQ2FwUmlnaHRDaG9pY2UiOiAiKSIsICJGb250Q29tYm9Cb3giOiAiVWJ1bnR1TW9uby1CIiwgIkhlaWdodEN0cmwiOiAiMC43IiwgIkxheWVyQ29tYm9Cb3giOiAiRi5TaWxrUyIsICJNdWx0aUxpbmVUZXh0IjogIlJTVCIsICJQYWRkaW5nQm90dG9tQ3RybCI6ICIyIiwgIlBhZGRpbmdMZWZ0Q3RybCI6ICIxIiwgIlBhZGRpbmdSaWdodEN0cmwiOiAiMSIsICJQYWRkaW5nVG9wQ3RybCI6ICIyIiwgIldpZHRoQ3RybCI6ICIwLjcifQ==")
 		(property "Reference" "kibuzzard-631DCCC7"
-			(at 0 -0.452046 360)
+			(at 0 -0.452046 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "88faa6d0-bccf-4d51-9742-9bca4923744e")
@@ -11171,7 +12792,7 @@
 			)
 		)
 		(property "Value" "G***"
-			(at 0 0.452046 360)
+			(at 0 0.452046 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "94a4c08e-5c52-4c64-a2a9-d751204c02ff")
@@ -11293,18 +12914,18 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1uF"
 			(at -1.14 -0.02 180)
 			(layer "F.Fab")
 			(uuid "0a5de631-1a7d-46a8-b7b3-3b9f2025fd1b")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11340,7 +12961,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0ceda16d-6694-4f26-826f-9906c19b73be")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2b1f3aa2-3b37-443a-9d71-c3a5c7718bd3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8f45db42-c37d-4ce2-a1ae-d1d35465c652")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
 		(path "/3ba00633-3c6e-474d-babe-ca4ce9af3049")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -11444,13 +13106,13 @@
 			(uuid "0101fcf2-23ad-4c1e-8d76-2bba9cb2df55")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0.02 180)
+			(at 0 -0.01 180)
 			(layer "F.Fab")
 			(uuid "bd2174ba-0a1b-4050-843d-9cfa9be0da05")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -11504,17 +13166,17 @@
 			)
 		)
 		(property "Value" "27R"
-			(at 1.08 -0.04 360)
+			(at 1.08 -0.04 0)
 			(layer "F.Fab")
 			(uuid "10a3613c-763a-4e1b-9392-612408763489")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11550,7 +13212,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9407b2ef-fc39-40bd-bb2a-62fd068841f8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "76c0d7a4-b617-43a5-984b-0dbe8cac77d9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1327462a-edf3-4db2-99d2-ebf676f1974f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
 		(path "/db44f89c-e706-4b5e-b8a2-9d129f9729f7")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -11654,13 +13357,13 @@
 			(uuid "e09dc0dc-c85e-49e3-9807-e5b43395e415")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0.02 -0.02 360)
+			(at 0.02 0.02 0)
 			(layer "F.Fab")
 			(uuid "f83eb643-dc0a-4835-b25a-24eb00aab75d")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -11678,7 +13381,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 55 "Net-(R6-Pad2)")
+			(net 64 "Net-(U3-USB-DM)")
 			(pintype "passive")
 			(uuid "0436ba90-99f9-4a57-84d4-d45fc6c992b1")
 		)
@@ -11702,7 +13405,7 @@
 		(descr "Converted using: scripting")
 		(tags "kb_params=eyJBbGlnbm1lbnRDaG9pY2UiOiAiTGVmdCIsICJDYXBMZWZ0Q2hvaWNlIjogIigiLCAiQ2FwUmlnaHRDaG9pY2UiOiAiKSIsICJGb250Q29tYm9Cb3giOiAiVWJ1bnR1TW9uby1CIiwgIkhlaWdodEN0cmwiOiAiMC43IiwgIkxheWVyQ29tYm9Cb3giOiAiRi5TaWxrUyIsICJNdWx0aUxpbmVUZXh0IjogIkRMRUQiLCAiUGFkZGluZ0JvdHRvbUN0cmwiOiAiMiIsICJQYWRkaW5nTGVmdEN0cmwiOiAiMSIsICJQYWRkaW5nUmlnaHRDdHJsIjogIjEiLCAiUGFkZGluZ1RvcEN0cmwiOiAiMiIsICJXaWR0aEN0cmwiOiAiMC43In0=")
 		(property "Reference" "kibuzzard-631DCD0C"
-			(at 0 -0.445378 360)
+			(at 0 -0.445378 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e273d2f2-3289-4bb9-9ce5-11953c56cb6f")
@@ -11714,7 +13417,7 @@
 			)
 		)
 		(property "Value" "G***"
-			(at 0 0.445378 360)
+			(at 0 0.445378 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "c831c807-d765-45ed-ac4f-e824e345cc37")
@@ -11836,7 +13539,7 @@
 		(descr "Through hole straight pin header, 1x20, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x20 2.54mm single row")
 		(property "Reference" "J3"
-			(at 0 -2.33 270)
+			(at 0 -2.33 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "1ce76ffc-5096-4a4d-ab2f-0c29da5c6f42")
@@ -11847,18 +13550,18 @@
 				)
 			)
 		)
-		(property "Value" "Header_1"
-			(at -0.01 20.6 360)
+		(property "Value" "Header-1"
+			(at -0.5 24.3 0)
 			(layer "F.Fab")
 			(uuid "a97a0fb6-e51d-4a8b-8326-320eb304ec57")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "CIRCUITSTATE-Connector-Pin-Headers:PinHeader_1x20_2H_P2.54mm_Vertical"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11894,7 +13597,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7d035edf-fea3-40a7-8135-3745a406bc32")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c1c9708d-296a-439e-b5f8-5d6282b034e5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" "Header-1"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7cf7ea12-146b-47ee-af7a-3569144b6698")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/92e65dfd-d539-4868-b37f-83cf502a900e")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -11988,13 +13732,13 @@
 			(uuid "f0cecc93-1909-4c73-99f2-5579687fefdb")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 24.13 360)
+			(at 0 24.13 0)
 			(layer "F.Fab")
 			(uuid "1179d034-21ff-484c-863c-15efd80fa440")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -12470,17 +14214,17 @@
 			)
 		)
 		(property "Value" "2.2uF"
-			(at 0.1 0.27 270)
+			(at 0.1 0.27 -90)
 			(layer "F.Fab")
 			(uuid "2b2aeb07-6a2e-4929-ae92-a6ddbd112939")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-2012-12_Kemet-R"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12516,7 +14260,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "546ecfc6-0a4a-46c9-8d39-4e807743cbc4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "25208c0c-85f4-424a-8afb-145560c83b12")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "905c8081-97ba-4366-a1a7-1c707182c56c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "CP_*")
 		(path "/a1cda359-f88f-49de-8711-b732a1175cce")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -12640,13 +14425,13 @@
 			(uuid "1def82f5-e27b-462e-8570-2ec86fd21b9f")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0.04 -0.22 270)
+			(at 0.04 -0.22 -90)
 			(layer "F.Fab")
 			(uuid "4fda9512-da15-4206-af97-af31f7536211")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -12687,7 +14472,7 @@
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R3"
-			(at 0.6 -0.97 270)
+			(at 0.6 -0.97 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "d004c677-3abe-459d-8825-b328aa20b5bf")
@@ -12699,17 +14484,17 @@
 			)
 		)
 		(property "Value" "5.1K"
-			(at -1.17 0.02 270)
+			(at 0 -0.57 -90)
 			(layer "F.Fab")
 			(uuid "82e4c823-5fb8-4c26-b8c2-9aadf1e4d556")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12745,7 +14530,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b765aae3-ff9c-4dd9-9289-a47dbfdde0f5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e178e4c7-62ea-41f3-88eb-b6934a26df72")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d4e6fe49-a769-4443-97b8-43b1e873701a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
 		(path "/512ceaaa-ea3f-4211-b44d-1c9084549956")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -12849,13 +14675,13 @@
 			(uuid "c56ae7ae-0340-4c67-be2f-6f7c436268c6")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -0.02 0.02 270)
+			(at -0.02 0.02 -90)
 			(layer "F.Fab")
 			(uuid "e1064771-5ce1-49f9-8e83-71af4de2a740")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -12864,7 +14690,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 60 "Net-(J2-PadA5)")
+			(net 56 "Net-(J2-CC1)")
 			(pintype "passive")
 			(uuid "2f3fa2af-fa99-4d79-bfea-0fa1f2a8d459")
 		)
@@ -13081,12 +14907,12 @@
 			(uuid "ca4d00c1-3380-47c3-9444-166964a2fb4b")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13098,7 +14924,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC5219-500mA-Peak-Output-LDO-Regulator-DS20006021A.pdf"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13122,7 +14948,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3fc58ee3-b5d2-484c-8816-c353fbaba25c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "11eed525-8c42-492e-b2a1-185f146d1504")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "69da5d41-12eb-49d9-a12d-f5ebaa7b6712")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "SOT?23*")
 		(path "/e8f5968d-f61e-47e8-8672-f94f7660cae6")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -13261,8 +15128,8 @@
 			(uuid "acae5cc1-6270-4f05-a3b7-5b81df43dd09")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -13301,7 +15168,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 7 "Net-(C16-Pad1)")
+			(net 7 "Net-(U2-BP)")
 			(pinfunction "BP")
 			(pintype "input")
 			(uuid "b97962e8-bdc3-4223-9790-33986debab0c")
@@ -13335,7 +15202,7 @@
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R11"
-			(at -0.1 -0.02 360)
+			(at -0.1 -0.02 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "cc30dea8-e80d-4687-a859-b9f3e8f14aa6")
@@ -13347,17 +15214,17 @@
 			)
 		)
 		(property "Value" "5.1K"
-			(at 1.17 -0.03 360)
+			(at 1.17 -0.03 0)
 			(layer "F.Fab")
 			(uuid "cec65250-0e55-4f25-87f7-08e0d8a88ca9")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13393,7 +15260,48 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "16b7b05a-9909-4cfa-9343-c1ba8d64f29f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a6283bf5-d9b8-4cd4-9389-554f46bed5b8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "12a1167b-74ac-4494-b093-ab73397c1ad8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
 		(path "/be6b82de-5166-450b-bb1d-d361adb24990")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -13497,13 +15405,13 @@
 			(uuid "e01c4da9-653a-40dc-a74e-eba7b74792be")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "22acf822-b916-4fd6-ae0d-60a5f26d6f1f")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
@@ -13555,18 +15463,18 @@
 				)
 			)
 		)
-		(property "Value" "UBUT"
+		(property "Value" "BTN"
 			(at -0.05 -1.73 180)
 			(layer "F.Fab")
 			(uuid "158dbf7a-04d2-46a1-8b42-4b38dc86da1b")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "CIRCUITSTATE_Switch_SMD:CK_SW_SPST_UK-B0273-SP25Y"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13602,7 +15510,47 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "34f6024e-a784-4dd1-bc51-4704169b856b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9cafa0b9-9411-436e-9a2c-e86955126ea3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Name" "UBUT"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7323887d-1703-46c2-9e8f-85f53548b39c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/da6303de-c499-4c7e-8f62-25cc5d106f94")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -13811,7 +15759,7 @@
 			(at -2.175 0 180)
 			(size 1.15 1.7)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 64 "Net-(JP6-Pad2)")
+			(net 62 "Net-(JP6-C)")
 			(pinfunction "1")
 			(pintype "passive")
 			(uuid "2457d20f-2ca7-4260-94ec-d624faed517c")
@@ -13845,7 +15793,7 @@
 		(descr "Converted using: scripting")
 		(tags "kb_params=eyJBbGlnbm1lbnRDaG9pY2UiOiAiTGVmdCIsICJDYXBMZWZ0Q2hvaWNlIjogIlsiLCAiQ2FwUmlnaHRDaG9pY2UiOiAiXSIsICJGb250Q29tYm9Cb3giOiAiVWJ1bnR1TW9uby1CIiwgIkhlaWdodEN0cmwiOiAiMC43IiwgIkxheWVyQ29tYm9Cb3giOiAiRi5TaWxrUyIsICJNdWx0aUxpbmVUZXh0IjogIkoxIiwgIlBhZGRpbmdCb3R0b21DdHJsIjogIjIuNSIsICJQYWRkaW5nTGVmdEN0cmwiOiAiMyIsICJQYWRkaW5nUmlnaHRDdHJsIjogIjMiLCAiUGFkZGluZ1RvcEN0cmwiOiAiMi41IiwgIldpZHRoQ3RybCI6ICIwLjcifQ==")
 		(property "Reference" "kibuzzard-631DCDA0"
-			(at 0 -0.467418 360)
+			(at 0 -0.467418 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e0ba6346-ae25-43f5-b6a1-db182af7f36b")
@@ -13857,7 +15805,7 @@
 			)
 		)
 		(property "Value" "G***"
-			(at 0 0.467418 360)
+			(at 0 0.467418 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "c48fc01b-6480-449f-b71a-b4f2dd55bdd3")
@@ -14065,7 +16013,7 @@
 		(descr "Through hole straight pin header, 2x04, 2.54mm pitch, double rows")
 		(tags "Through hole pin header THT 2x04 2.54mm double row")
 		(property "Reference" "J1"
-			(at 1.32 -1.42 360)
+			(at 1.32 -1.42 0)
 			(layer "B.SilkS")
 			(hide yes)
 			(uuid "0b71df56-af94-4145-9b78-b323c961098a")
@@ -14078,18 +16026,18 @@
 			)
 		)
 		(property "Value" "EXP8"
-			(at 1.27 -9.95 360)
+			(at 1.31 -3.15 0)
 			(layer "B.Fab")
 			(uuid "4a547d67-7d78-4922-996a-fd98ff58ae22")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 				(justify mirror)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14125,7 +16073,51 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e1579fc3-0a80-434b-9f90-31594ad1d185")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "854f5690-95d2-483e-8ecb-9197fb894fc5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Name" "EXP8"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "60366cdf-503f-4717-900d-34a7e2643737")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Connector*:*_2x??_*")
 		(path "/4d5633cf-cdaa-4582-9587-d02fbb12714e")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -14219,13 +16211,13 @@
 			(uuid "9e2d3c0c-ca8d-4cd2-a616-1c05942374f3")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.27 -3.81 90)
+			(at 1.305 -3.725 0)
 			(layer "B.Fab")
 			(uuid "0377f92a-9e6b-442c-921b-a3c1e5e75e36")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 				(justify mirror)
 			)
@@ -14373,7 +16365,7 @@
 		(descr "Two-pin SMD solder jumper in a size similar to 0402")
 		(tags "jumper solder")
 		(property "Reference" "JP6"
-			(at 0.2 1.37 360)
+			(at 0.2 1.37 0)
 			(layer "B.SilkS")
 			(hide yes)
 			(uuid "d380c4e0-d9dd-486b-ab81-1da0df82b478")
@@ -14385,19 +16377,19 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "UBUT_SEL"
-			(at 0 -1.17 360)
+		(property "Value" "BTN_SEL"
+			(at -0.07 -0.89 0)
 			(layer "B.Fab")
 			(uuid "31680a0c-9206-40b7-83ea-3c182d3d8050")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 				(justify mirror)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "CIRCUITSTATE_Jumper_SMD:Solder-Jumper_3P_Open_0402"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14433,7 +16425,51 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ab8381da-fd42-4876-aa75-6bb994457b8d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9f97fae0-93e7-438a-8769-e5f4307701aa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Name" "UBUT_SEL"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f23f8693-4101-496d-aa80-04a98c8fa814")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "SolderJumper*Open*")
 		(path "/e53cfa20-1724-4085-b35f-d0e0c6b817cf")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -14557,13 +16593,13 @@
 			(uuid "6306fb86-ba45-42d8-9131-c651e8626249")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(uuid "c0636677-254d-4d5e-aa05-877e0f0b9bcd")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 				(justify mirror)
 			)
@@ -14584,7 +16620,7 @@
 			(at 0 0)
 			(size 0.5 0.64)
 			(layers "B.Cu" "B.Paste" "B.Mask")
-			(net 64 "Net-(JP6-Pad2)")
+			(net 62 "Net-(JP6-C)")
 			(pinfunction "C")
 			(pintype "input")
 			(uuid "d0573aa8-ce69-4c1b-b30e-322decc33c4f")
@@ -16017,19 +18053,19 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "Header_2"
-			(at -0.01 -26.8 180)
+		(property "Value" "Header-2"
+			(at 0.53 -24.09 180)
 			(layer "B.Fab")
 			(uuid "ca13d03c-cea1-448d-9ade-f59ce6e44e98")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 				(justify mirror)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "CIRCUITSTATE-Connector-Pin-Headers:PinHeader_1x20_2H_P2.54mm_Vertical"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16065,7 +18101,51 @@
 				)
 			)
 		)
+		(property "MFR" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "371e909d-3e8c-4f0a-8bfb-e8f7e08ea61e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "MPN" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "077c9c7f-84a5-49ed-b81a-a6905f9d49a1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Name" "Header-2"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c07eb416-e2ad-44e2-84a9-73a5b212c4c6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/1eac032b-9c90-44ab-9230-cbf8126f9127")
+		(sheetname "Root")
 		(sheetfile "Mitayi-Pico-RP2040.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -16164,8 +18244,8 @@
 			(uuid "fda00d6a-acd4-42f6-9ad7-b51af857dbef")
 			(effects
 				(font
-					(size 0.3 0.3)
-					(thickness 0.05)
+					(size 0.25 0.25)
+					(thickness 0.06)
 				)
 				(justify mirror)
 			)
@@ -19835,28 +21915,28 @@
 		(uuid "cf78a8e9-0dd5-4a3f-ada8-e3e9558bb560")
 	)
 	(segment
-		(start 159.07 82.77)
-		(end 157.2375 82.77)
+		(start 154.7 82.4)
+		(end 153.65 82.4)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 11)
-		(uuid "10ec669e-6efb-4621-8b0d-407bcbf277d1")
+		(uuid "1cf617fa-f1b6-4cf6-b1ce-a2dab9a4e90f")
 	)
 	(segment
-		(start 161.64 83.9275)
-		(end 160.2275 83.9275)
+		(start 155.6625 82.77)
+		(end 155.07 82.77)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 11)
-		(uuid "7bebceef-e7c1-4b0b-ba36-7318f46f3087")
+		(uuid "8d9c9168-cd64-42a7-afb3-6ed30df4825f")
 	)
 	(segment
-		(start 160.2275 83.9275)
-		(end 159.07 82.77)
+		(start 155.07 82.77)
+		(end 154.7 82.4)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 11)
-		(uuid "aba2e427-90a2-4597-a577-8ae45a05ec50")
+		(uuid "d2a1a51b-be2b-4cbd-af35-773a94a234a9")
 	)
 	(segment
 		(start 146.67 92.879264)
@@ -22635,67 +24715,35 @@
 		(uuid "a2fb884e-e9fe-48f3-a0b2-bfbd536fe55a")
 	)
 	(segment
-		(start 145.4325 87.98)
-		(end 143.1525 87.98)
+		(start 159.07 82.77)
+		(end 157.2375 82.77)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 54)
-		(uuid "43f881bf-dc81-4a6b-a47a-9ec782e03a8e")
+		(uuid "10ec669e-6efb-4621-8b0d-407bcbf277d1")
 	)
 	(segment
-		(start 143.1525 87.98)
-		(end 143.1475 87.975)
+		(start 161.64 83.9275)
+		(end 160.2275 83.9275)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 54)
-		(uuid "a2aad51c-6fe4-4eaf-ab92-c203ce55300e")
+		(uuid "7bebceef-e7c1-4b0b-ba36-7318f46f3087")
 	)
 	(segment
-		(start 143.7525 87.58)
-		(end 143.1475 86.975)
+		(start 160.2275 83.9275)
+		(end 159.07 82.77)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 55)
-		(uuid "49a462e0-8a0f-45f9-b29c-110a6876a962")
-	)
-	(segment
-		(start 145.4325 87.58)
-		(end 143.7525 87.58)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 55)
-		(uuid "b8ad69d4-9bee-4a48-b386-bb7ecc8bb547")
-	)
-	(segment
-		(start 154.7 82.4)
-		(end 153.65 82.4)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 56)
-		(uuid "1cf617fa-f1b6-4cf6-b1ce-a2dab9a4e90f")
-	)
-	(segment
-		(start 155.6625 82.77)
-		(end 155.07 82.77)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 56)
-		(uuid "8d9c9168-cd64-42a7-afb3-6ed30df4825f")
-	)
-	(segment
-		(start 155.07 82.77)
-		(end 154.7 82.4)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 56)
-		(uuid "d2a1a51b-be2b-4cbd-af35-773a94a234a9")
+		(net 54)
+		(uuid "aba2e427-90a2-4597-a577-8ae45a05ec50")
 	)
 	(segment
 		(start 128.8825 95.63)
 		(end 127.1175 95.63)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 57)
+		(net 55)
 		(uuid "9bc49949-8401-456a-a6a3-ae7f7865e45a")
 	)
 	(segment
@@ -22703,8 +24751,56 @@
 		(end 127.0875 95.6)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 57)
+		(net 55)
 		(uuid "e1c197a7-b5ae-43a7-9aa3-e30af1d6acb3")
+	)
+	(segment
+		(start 128.86 88.04)
+		(end 128.03 88.04)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 56)
+		(uuid "361a5b1f-58f5-474e-8bb5-361fa6fce900")
+	)
+	(segment
+		(start 129.8 87.1)
+		(end 128.86 88.04)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 56)
+		(uuid "623e408d-4314-47ef-a1b8-e55b42f58aaa")
+	)
+	(segment
+		(start 129.8 85.9975)
+		(end 129.8 87.1)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 56)
+		(uuid "ee386b2f-df46-49c9-9fed-7dca635b5caf")
+	)
+	(segment
+		(start 129.8 90.1)
+		(end 129.8 89.8525)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 58)
+		(uuid "746f03aa-c824-4ea5-af8c-d3e585d478be")
+	)
+	(segment
+		(start 128.86 91.04)
+		(end 129.8 90.1)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 58)
+		(uuid "b9d8db35-0fe1-4e0e-bd50-38ed22be3013")
+	)
+	(segment
+		(start 128.03 91.04)
+		(end 128.86 91.04)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 58)
+		(uuid "cb07c8be-23c5-4389-a676-5d24a1a0747d")
 	)
 	(segment
 		(start 133.2 85)
@@ -22851,59 +24947,11 @@
 		(uuid "e7a6e63e-d03f-42d7-b4df-f833f19255ef")
 	)
 	(segment
-		(start 128.86 88.04)
-		(end 128.03 88.04)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 60)
-		(uuid "361a5b1f-58f5-474e-8bb5-361fa6fce900")
-	)
-	(segment
-		(start 129.8 87.1)
-		(end 128.86 88.04)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 60)
-		(uuid "623e408d-4314-47ef-a1b8-e55b42f58aaa")
-	)
-	(segment
-		(start 129.8 85.9975)
-		(end 129.8 87.1)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 60)
-		(uuid "ee386b2f-df46-49c9-9fed-7dca635b5caf")
-	)
-	(segment
-		(start 129.8 90.1)
-		(end 129.8 89.8525)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 62)
-		(uuid "746f03aa-c824-4ea5-af8c-d3e585d478be")
-	)
-	(segment
-		(start 128.86 91.04)
-		(end 129.8 90.1)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 62)
-		(uuid "b9d8db35-0fe1-4e0e-bd50-38ed22be3013")
-	)
-	(segment
-		(start 128.03 91.04)
-		(end 128.86 91.04)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 62)
-		(uuid "cb07c8be-23c5-4389-a676-5d24a1a0747d")
-	)
-	(segment
 		(start 141.25 93.95)
 		(end 141.815 94.515)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 64)
+		(net 62)
 		(uuid "2df541fa-4ce4-4752-95fa-2b4552751b5f")
 	)
 	(segment
@@ -22911,7 +24959,7 @@
 		(end 141.25 93.95)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 64)
+		(net 62)
 		(uuid "842c2df4-6298-4aae-bb63-78aba464f1ae")
 	)
 	(segment
@@ -22919,7 +24967,7 @@
 		(end 142.44 94.515)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 64)
+		(net 62)
 		(uuid "9af73048-aafe-4340-acec-96284573420a")
 	)
 	(via
@@ -22927,7 +24975,7 @@
 		(size 0.4)
 		(drill 0.2)
 		(layers "F.Cu" "B.Cu")
-		(net 64)
+		(net 62)
 		(uuid "797afa24-00cf-4a08-936b-b716875c3d9e")
 	)
 	(segment
@@ -22935,7 +24983,7 @@
 		(end 141.135 92.035)
 		(width 0.2)
 		(layer "B.Cu")
-		(net 64)
+		(net 62)
 		(uuid "25ebd867-03bd-4a2c-8cfc-d88bb4e75d2c")
 	)
 	(segment
@@ -22943,8 +24991,40 @@
 		(end 141.135 92.7845)
 		(width 0.2)
 		(layer "B.Cu")
-		(net 64)
+		(net 62)
 		(uuid "ad77f8bd-10e9-4581-8f83-149219121197")
+	)
+	(segment
+		(start 145.4325 87.98)
+		(end 143.1525 87.98)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 63)
+		(uuid "43f881bf-dc81-4a6b-a47a-9ec782e03a8e")
+	)
+	(segment
+		(start 143.1525 87.98)
+		(end 143.1475 87.975)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 63)
+		(uuid "a2aad51c-6fe4-4eaf-ab92-c203ce55300e")
+	)
+	(segment
+		(start 143.7525 87.58)
+		(end 143.1475 86.975)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 64)
+		(uuid "49a462e0-8a0f-45f9-b29c-110a6876a962")
+	)
+	(segment
+		(start 145.4325 87.58)
+		(end 143.7525 87.58)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 64)
+		(uuid "b8ad69d4-9bee-4a48-b386-bb7ecc8bb547")
 	)
 	(zone
 		(net 2)

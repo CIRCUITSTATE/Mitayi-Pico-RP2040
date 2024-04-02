@@ -7,7 +7,7 @@
 	(title_block
 		(title "Mitayi Pico - Schematic")
 		(date "2024-04-02")
-		(rev "0.5")
+		(rev "0.6")
 		(company "CIRCUITSTATE Electronics LLP (www.circuitstate.com)")
 		(comment 1 "Designed by: Vishnu Mohanan (@vishnumaiea)")
 		(comment 2 "Released under MIT Open-source License")
@@ -5961,6 +5961,12 @@
 		(uuid "3b6fc71d-fee2-420b-9963-6c9e6d6b0b83")
 	)
 	(junction
+		(at 182.372 36.957)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3bfb35d9-dd58-4aa2-b6cb-bd2eff5603b4")
+	)
+	(junction
 		(at 353.822 49.53)
 		(diameter 1.016)
 		(color 0 0 0 0)
@@ -6037,12 +6043,6 @@
 		(diameter 1.016)
 		(color 0 0 0 0)
 		(uuid "a68cacb3-bc6c-456e-82d5-99f375819f02")
-	)
-	(junction
-		(at 183.642 36.957)
-		(diameter 1.016)
-		(color 0 0 0 0)
-		(uuid "aa12346a-ad26-4442-828f-41279f16e848")
 	)
 	(junction
 		(at 89.535 44.45)
@@ -6183,10 +6183,10 @@
 		(uuid "f390b8a7-eb1c-4159-b1dd-062bd69e1ff4")
 	)
 	(junction
-		(at 183.642 47.117)
-		(diameter 1.016)
+		(at 182.372 47.117)
+		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f85e1f14-f00d-46c9-97c1-14ac416f604d")
+		(uuid "f922db49-03fa-4056-bffa-e29d40284669")
 	)
 	(junction
 		(at 287.147 102.87)
@@ -6251,16 +6251,6 @@
 			(type solid)
 		)
 		(uuid "05ae38dd-e420-4ddb-b6c7-6158991fb5f4")
-	)
-	(wire
-		(pts
-			(xy 192.532 47.117) (xy 183.642 47.117)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "05ae38dd-e420-4ddb-b6c7-6158991fb5f5")
 	)
 	(wire
 		(pts
@@ -6424,7 +6414,7 @@
 	)
 	(wire
 		(pts
-			(xy 183.642 38.227) (xy 183.642 36.957)
+			(xy 182.372 38.227) (xy 182.372 36.957)
 		)
 		(stroke
 			(width 0)
@@ -6534,6 +6524,16 @@
 	)
 	(wire
 		(pts
+			(xy 182.372 47.117) (xy 192.532 47.117)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "17eee48b-d8ba-4a80-a913-0b4586096834")
+	)
+	(wire
+		(pts
 			(xy 215.9 36.957) (xy 227.33 36.957)
 		)
 		(stroke
@@ -6581,6 +6581,16 @@
 			(type solid)
 		)
 		(uuid "1fc6c489-9272-4fa5-b1f8-81af67da4711")
+	)
+	(wire
+		(pts
+			(xy 105.537 180.975) (xy 124.46 180.975)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "23b94481-211b-4d70-b9f5-d75dfad0c3ee")
 	)
 	(wire
 		(pts
@@ -6734,16 +6744,6 @@
 	)
 	(wire
 		(pts
-			(xy 105.537 180.975) (xy 123.825 180.975)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "3837d29b-082b-4dc5-9166-67214755ebea")
-	)
-	(wire
-		(pts
 			(xy 29.845 80.01) (xy 40.005 80.01)
 		)
 		(stroke
@@ -6884,7 +6884,7 @@
 	)
 	(wire
 		(pts
-			(xy 183.642 47.117) (xy 183.642 45.847)
+			(xy 182.372 47.117) (xy 182.372 45.847)
 		)
 		(stroke
 			(width 0)
@@ -7734,16 +7734,6 @@
 	)
 	(wire
 		(pts
-			(xy 183.642 36.957) (xy 192.532 36.957)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "89b8c18f-6922-4c34-b079-a543c87de672")
-	)
-	(wire
-		(pts
 			(xy 104.902 242.697) (xy 98.552 242.697)
 		)
 		(stroke
@@ -7834,7 +7824,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.212 36.957) (xy 183.642 36.957)
+			(xy 172.212 36.957) (xy 182.372 36.957)
 		)
 		(stroke
 			(width 0)
@@ -8254,13 +8244,23 @@
 	)
 	(wire
 		(pts
-			(xy 172.212 47.117) (xy 183.642 47.117)
+			(xy 172.212 47.117) (xy 182.372 47.117)
 		)
 		(stroke
 			(width 0)
 			(type solid)
 		)
 		(uuid "b46999f6-1cef-4f77-958f-50892f934696")
+	)
+	(wire
+		(pts
+			(xy 182.372 36.957) (xy 192.532 36.957)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "b527af1b-876a-48d2-a42c-1ff32d27e531")
 	)
 	(wire
 		(pts
@@ -10482,7 +10482,7 @@
 		(uuid "b7ee5666-832c-45d7-b787-08ef0809b6ba")
 	)
 	(label "XIN"
-		(at 123.825 180.975 180)
+		(at 124.46 180.975 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11029,8 +11029,8 @@
 				)
 			)
 		)
-		(property "Value" "USB_C_Receptacle_USB2.0"
-			(at 261.366 90.678 0)
+		(property "Value" "USB-C-2.0"
+			(at 260.731 90.678 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -11056,6 +11056,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 260.477 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 260.477 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 260.477 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" "USB-C"
 			(at 260.477 110.49 0)
 			(effects
 				(font
@@ -11143,7 +11170,7 @@
 			)
 		)
 		(property "Value" "30pF"
-			(at 94.996 177.038 90)
+			(at 94.5514 177.0883 90)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -11170,6 +11197,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 95.885 180.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 95.885 180.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 95.885 180.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
 			(at 95.885 180.975 0)
 			(effects
 				(font
@@ -11211,7 +11265,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "1uF"
 			(at 195.707 42.926 0)
 			(effects
 				(font
@@ -11239,6 +11293,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 192.532 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 192.532 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 192.532 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
 			(at 192.532 42.037 0)
 			(effects
 				(font
@@ -11410,7 +11491,7 @@
 				)
 			)
 		)
-		(property "Value" "Header_2"
+		(property "Value" "Header-2"
 			(at 189.738 86.36 0)
 			(effects
 				(font
@@ -11437,6 +11518,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 189.23 112.522 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 189.23 112.522 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 189.23 112.522 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" "Header-2"
 			(at 189.23 112.522 0)
 			(effects
 				(font
@@ -11566,6 +11674,33 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 286.385 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 286.385 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
+			(at 286.385 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8de12404-718b-4c0d-a047-7a32bc7e48e2")
 		)
@@ -11664,7 +11799,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "1uF"
 			(at 225.044 195.58 0)
 			(effects
 				(font
@@ -11692,6 +11827,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 221.615 194.437 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 221.615 194.437 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 221.615 194.437 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
 			(at 221.615 194.437 0)
 			(effects
 				(font
@@ -11759,6 +11921,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 369.062 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 369.062 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 369.062 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
 			(at 369.062 52.07 0)
 			(effects
 				(font
@@ -11846,6 +12035,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 353.822 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 353.822 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 353.822 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
 			(at 353.822 43.18 0)
 			(effects
 				(font
@@ -11952,7 +12168,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1uF"
 			(at 230.251 43.18 0)
 			(effects
 				(font
@@ -11980,6 +12196,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 227.33 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 227.33 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 227.33 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
 			(at 227.33 42.037 0)
 			(effects
 				(font
@@ -12120,29 +12363,29 @@
 				(hide yes)
 			)
 		)
-		(property "Author" "CIRCUITSTATE Electronics"
-			(at 93.853 137.16 0)
+		(property "MFR" ""
+			(at 45.085 128.27 0)
 			(effects
 				(font
-					(size 0.8 0.8)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "License" "CC BY 4.0"
-			(at 86.741 139.827 0)
+		(property "MPN" ""
+			(at 45.085 128.27 0)
 			(effects
 				(font
-					(size 0.8 0.8)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Revision" "1.3"
-			(at 83.566 142.494 0)
+		(property "Name" ""
+			(at 45.085 128.27 0)
 			(effects
 				(font
-					(size 0.8 0.8)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
@@ -12509,6 +12752,33 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 164.846 246.126 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 164.846 246.126 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" "EXP8"
+			(at 164.846 246.126 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "097f1ad3-7570-4758-bd1e-5d44bd5ec9bb")
 		)
@@ -12724,6 +12994,33 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 279.527 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 279.527 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
+			(at 279.527 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "322c20d8-35c9-4e9d-9282-b8413a079543")
 		)
@@ -12757,7 +13054,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1uF"
 			(at 377.063 34.29 90)
 			(effects
 				(font
@@ -12785,6 +13082,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 375.412 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 375.412 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 375.412 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
 			(at 375.412 38.1 0)
 			(effects
 				(font
@@ -13086,7 +13410,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1uF"
 			(at 241.681 43.18 0)
 			(effects
 				(font
@@ -13114,6 +13438,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 238.76 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 238.76 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 238.76 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
 			(at 238.76 42.037 0)
 			(effects
 				(font
@@ -13319,6 +13670,33 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 221.615 182.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 221.615 182.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
+			(at 221.615 182.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ed3281cc-28ec-43be-8f1a-c72fc1823d60")
 		)
@@ -13352,7 +13730,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1uF"
 			(at 287.401 43.18 0)
 			(effects
 				(font
@@ -13380,6 +13758,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 284.48 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 284.48 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 284.48 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
 			(at 284.48 42.037 0)
 			(effects
 				(font
@@ -13520,6 +13925,33 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 279.527 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 279.527 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
+			(at 279.527 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b7bcc05a-2d49-4ddf-b042-f1297001b29e")
 		)
@@ -13652,6 +14084,33 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 36.195 245.872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 36.195 245.872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" "DEB_EN"
+			(at 36.195 245.872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d1651b28-abe6-4e94-92a6-786889089229")
 		)
@@ -13685,7 +14144,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1uF"
 			(at 264.541 43.18 0)
 			(effects
 				(font
@@ -13713,6 +14172,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 261.62 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 261.62 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 261.62 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
 			(at 261.62 42.037 0)
 			(effects
 				(font
@@ -13754,7 +14240,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1uF"
 			(at 218.821 43.18 0)
 			(effects
 				(font
@@ -13782,6 +14268,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 215.9 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 215.9 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 215.9 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
 			(at 215.9 42.037 0)
 			(effects
 				(font
@@ -13922,6 +14435,33 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 114.427 191.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 114.427 191.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
+			(at 114.427 191.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4efb49f9-46b8-4c42-b9b9-f95cf7bf1c26")
 		)
@@ -13983,6 +14523,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 38.354 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 38.354 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 38.354 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
 			(at 38.354 189.23 0)
 			(effects
 				(font
@@ -14119,6 +14686,33 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 38.354 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 38.354 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
+			(at 38.354 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "Mitayi-Pico-RP2040"
 				(path "/35c47459-45a7-4753-acae-c8b47e7575e1"
@@ -14146,7 +14740,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1uF"
 			(at 175.133 43.18 0)
 			(effects
 				(font
@@ -14174,6 +14768,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 172.212 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 172.212 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 172.212 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
 			(at 172.212 42.037 0)
 			(effects
 				(font
@@ -14242,6 +14863,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 80.645 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 80.645 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 80.645 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" "AREF_SEL"
 			(at 80.645 39.37 0)
 			(effects
 				(font
@@ -14413,7 +15061,7 @@
 				)
 			)
 		)
-		(property "Value" "Header_1"
+		(property "Value" "Header-1"
 			(at 164.846 86.36 0)
 			(effects
 				(font
@@ -14440,6 +15088,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 164.592 112.522 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 164.592 112.522 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 164.592 112.522 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" "Header-1"
 			(at 164.592 112.522 0)
 			(effects
 				(font
@@ -14634,6 +15309,33 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 360.172 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 360.172 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
+			(at 360.172 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f31c6094-d76a-416f-b178-e9d93478d329")
 		)
@@ -14651,7 +15353,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 183.642 42.037 0)
+		(at 182.372 42.037 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -14659,7 +15361,7 @@
 		(dnp no)
 		(uuid "99fc58cc-746f-45ce-b07c-15150dc3bcbc")
 		(property "Reference" "C3"
-			(at 187.071 41.3766 0)
+			(at 185.801 41.3766 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -14667,8 +15369,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 186.563 43.18 0)
+		(property "Value" "0.1uF"
+			(at 185.293 43.18 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -14677,7 +15379,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 184.6072 45.847 0)
+			(at 183.3372 45.847 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -14686,7 +15388,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 183.642 42.037 0)
+			(at 182.372 42.037 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -14695,7 +15397,34 @@
 			)
 		)
 		(property "Description" ""
-			(at 183.642 42.037 0)
+			(at 182.372 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 182.372 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 182.372 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
+			(at 182.372 42.037 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14762,6 +15491,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 344.805 109.855 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 344.805 109.855 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 344.805 109.855 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" "VR1_CE"
 			(at 344.805 109.855 0)
 			(effects
 				(font
@@ -14969,6 +15725,33 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 376.047 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 376.047 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
+			(at 376.047 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "def423af-a1d0-4487-87b0-6665ff154693")
 		)
@@ -15002,7 +15785,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "1uF"
 			(at 209.931 42.672 0)
 			(effects
 				(font
@@ -15030,6 +15813,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 207.01 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 207.01 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 207.01 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
 			(at 207.01 42.037 0)
 			(effects
 				(font
@@ -15071,7 +15881,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1uF"
 			(at 275.971 43.18 0)
 			(effects
 				(font
@@ -15099,6 +15909,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 273.05 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 273.05 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 273.05 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
 			(at 273.05 42.037 0)
 			(effects
 				(font
@@ -15269,7 +16106,7 @@
 				)
 			)
 		)
-		(property "Value" "POW_LED"
+		(property "Value" "Red"
 			(at 349.1865 181.864 0)
 			(effects
 				(font
@@ -15296,6 +16133,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 349.25 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 349.25 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 349.25 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" "POW_LED"
 			(at 349.25 185.42 0)
 			(effects
 				(font
@@ -15337,7 +16201,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10uF"
 			(at 328.422 112.141 0)
 			(effects
 				(font
@@ -15365,6 +16229,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 334.137 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 334.137 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 334.137 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
 			(at 334.137 111.125 0)
 			(effects
 				(font
@@ -15471,7 +16362,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1uF"
 			(at 253.111 43.18 0)
 			(effects
 				(font
@@ -15499,6 +16390,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 250.19 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 250.19 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 250.19 42.037 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
 			(at 250.19 42.037 0)
 			(effects
 				(font
@@ -15576,6 +16494,33 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 38.354 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 38.354 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
+			(at 38.354 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "Mitayi-Pico-RP2040"
 				(path "/35c47459-45a7-4753-acae-c8b47e7575e1"
@@ -15602,7 +16547,7 @@
 				)
 			)
 		)
-		(property "Value" "DBG_LED"
+		(property "Value" "Blue"
 			(at 45.7835 242.316 0)
 			(effects
 				(font
@@ -15637,6 +16582,33 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 45.847 245.872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 45.847 245.872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" "DBG_LED"
+			(at 45.847 245.872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8cb7ab63-ea9d-4b32-8c1e-7e9641fc1824")
 		)
@@ -15662,7 +16634,7 @@
 		(dnp no)
 		(uuid "be6b82de-5166-450b-bb1d-d361adb24990")
 		(property "Reference" "R11"
-			(at 165.989 181.737 0)
+			(at 166.624 181.737 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -15696,6 +16668,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 163.957 181.737 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 163.957 181.737 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 163.957 181.737 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
 			(at 163.957 181.737 0)
 			(effects
 				(font
@@ -15901,6 +16900,33 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 118.237 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 118.237 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
+			(at 118.237 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "91df0d30-01da-47f7-b267-85f7512b8e5e")
 		)
@@ -16035,6 +17061,33 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 109.982 245.237 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 109.982 245.237 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" "SWD"
+			(at 109.982 245.237 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f76e7219-38c6-4490-a392-52d177706a4f")
 		)
@@ -16107,6 +17160,33 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 366.395 114.935 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 366.395 114.935 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
+			(at 366.395 114.935 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "361216c4-f2a3-4657-a59a-e1c1bdc7789e")
 		)
@@ -16139,7 +17219,7 @@
 				)
 			)
 		)
-		(property "Value" "UBUT"
+		(property "Value" "BTN"
 			(at 175.387 188.849 0)
 			(effects
 				(font
@@ -16166,6 +17246,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 175.387 193.167 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 175.387 193.167 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 175.387 193.167 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" "UBUT"
 			(at 175.387 193.167 0)
 			(effects
 				(font
@@ -16241,6 +17348,33 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 118.237 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 118.237 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
+			(at 118.237 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fd2768fa-1ca0-4eb1-b1a5-43cd309a9f07")
 		)
@@ -16300,6 +17434,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 56.515 245.872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 56.515 245.872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 56.515 245.872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
 			(at 56.515 245.872 0)
 			(effects
 				(font
@@ -16377,6 +17538,33 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 38.354 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 38.354 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
+			(at 38.354 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "Mitayi-Pico-RP2040"
 				(path "/35c47459-45a7-4753-acae-c8b47e7575e1"
@@ -16430,6 +17618,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 233.045 188.595 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 233.045 188.595 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 233.045 188.595 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" "Reset"
 			(at 233.045 188.595 0)
 			(effects
 				(font
@@ -16536,7 +17751,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "UBUT_SEL"
+		(property "Value" "BTN_SEL"
 			(at 161.417 194.4369 90)
 			(effects
 				(font
@@ -16564,6 +17779,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 163.957 193.167 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 163.957 193.167 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 163.957 193.167 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" "UBUT_SEL"
 			(at 163.957 193.167 0)
 			(effects
 				(font
@@ -16642,6 +17884,33 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 357.505 108.585 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 357.505 108.585 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
+			(at 357.505 108.585 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "af8c4a38-bd9e-4b13-a67a-d8e7af36f299")
 		)
@@ -16710,6 +17979,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 338.582 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 338.582 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 338.582 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
 			(at 338.582 49.53 0)
 			(effects
 				(font
@@ -16816,7 +18112,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10uF"
 			(at 389.89 111.76 0)
 			(effects
 				(font
@@ -16844,6 +18140,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 386.715 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 386.715 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 386.715 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
 			(at 386.715 111.125 0)
 			(effects
 				(font
@@ -16911,6 +18234,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 105.537 186.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 105.537 186.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 105.537 186.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
 			(at 105.537 186.055 0)
 			(effects
 				(font
@@ -17154,7 +18504,7 @@
 			)
 		)
 		(property "Value" "30pF"
-			(at 94.742 196.342 90)
+			(at 94.5876 196.4447 90)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -17181,6 +18531,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 95.885 191.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 95.885 191.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 95.885 191.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
 			(at 95.885 191.135 0)
 			(effects
 				(font
@@ -17313,6 +18690,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 283.845 186.817 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 283.845 186.817 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 283.845 186.817 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" "USB-Micro"
 			(at 283.845 186.817 0)
 			(effects
 				(font
