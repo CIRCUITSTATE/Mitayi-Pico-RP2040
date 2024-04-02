@@ -1,14 +1,25 @@
 
 #
+### **+05:30 08:04:50 PM 02-04-2024, Tuesday**
+
+  * Updated KiCad project version to V8.
+  * Rotated the board -90 degrees. It was hard to work with a vertical board.
+  * Cleaned up the schematic. The schematic is now much neater.
+  * Updated project details.
+  * Updated gitignore.
+  * Updated Readme.
+  * New revision `R0.6`.
+
+#
 ### **+05:30 09:32:55 AM 20-02-2023, Monday**
 
   * New revision 🎯 **r0.5**.
   * Fixed crystal footprint issue.
   * USB-Micro footprint has been masked out to prevent shorting when soldering USB-C connector.
   * Removed AMS1117-3.3 voltage regulator.
-  * New dedicated push-button for BOOTSEL called UBUT, with dual functions.
+  * New dedicated push-button for `BOOTSEL` called `UBUT`, with dual functions.
   * Removed all redundant silkscreen items.
-  * New EXP8 8-pin expansion connector in 2x4 2.54mm pin header.
+  * New `EXP8` 8-pin expansion connector in 2x4 2.54mm pin header.
   * Changed project type to KiCad 7.
   * Updated solder jumper footprints.
   * Moved OSHW logo to back.

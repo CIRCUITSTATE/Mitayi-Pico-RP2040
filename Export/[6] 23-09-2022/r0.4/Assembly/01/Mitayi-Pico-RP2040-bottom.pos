@@ -1,9 +1,0 @@
-### Module positions - created on Fri Sep 23 08:54:41 2022 ###
-### Printed by Pcbnew version (6.0.7)
-## Unit = mm, Angle = deg.
-## Side : bottom
-# Ref     Val       Package                                  PosX       PosY       Rot  Side
-J1        EXP8      PinHeader_2x04_P2.54mm_Vertical       -6.6750     7.6000  -90.0000  bottom
-J4        Header_2  PinHeader_1x20_2H_P2.54mm_Vertical   -19.4000    49.7000  180.0000  bottom
-JP6       UBUT_SEL  Solder-Jumper_3P_Open_0402            -7.7650    31.3650  -90.0000  bottom
-## End
