@@ -5,6 +5,7 @@
   * Updated paste layers.
   * Updated BoM.
   * DRC passes.
+  * Modified all GND pads on the headers to rectangles.
   * Added board stackup info and board characteristics.
   * Generated manufacturing files
 
