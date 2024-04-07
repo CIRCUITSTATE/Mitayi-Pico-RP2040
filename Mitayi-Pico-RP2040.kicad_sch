@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "Mitayi Pico - Schematic")
-		(date "2024-04-02")
+		(date "2024-04-07")
 		(rev "0.6")
 		(company "CIRCUITSTATE Electronics LLP (www.circuitstate.com)")
 		(comment 1 "Designed by: Vishnu Mohanan (@vishnumaiea)")
@@ -11250,7 +11250,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "HCTL"
 			(at 260.35 110.49 0)
 			(effects
 				(font
@@ -11259,7 +11259,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "HC-TYPE-C-16P-01A"
 			(at 260.35 110.49 0)
 			(effects
 				(font
@@ -11391,7 +11391,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 95.885 180.975 0)
 			(effects
 				(font
@@ -11400,7 +11400,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402N270J500LT"
 			(at 95.885 180.975 0)
 			(effects
 				(font
@@ -11487,7 +11487,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 192.405 41.91 0)
 			(effects
 				(font
@@ -11496,7 +11496,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402X105K160CT"
 			(at 192.405 41.91 0)
 			(effects
 				(font
@@ -11860,7 +11860,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Micro Commercial Co"
 			(at 286.385 95.25 0)
 			(effects
 				(font
@@ -11869,7 +11869,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "B5817WS"
 			(at 286.385 95.25 0)
 			(effects
 				(font
@@ -12021,7 +12021,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 221.615 194.31 0)
 			(effects
 				(font
@@ -12030,7 +12030,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402X105K160CT"
 			(at 221.615 194.31 0)
 			(effects
 				(font
@@ -12390,7 +12390,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 227.33 41.91 0)
 			(effects
 				(font
@@ -12399,7 +12399,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402B104K160CT"
 			(at 227.33 41.91 0)
 			(effects
 				(font
@@ -13180,7 +13180,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 279.4 100.33 0)
 			(effects
 				(font
@@ -13189,7 +13189,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "WR04X5101FTL"
 			(at 279.4 100.33 0)
 			(effects
 				(font
@@ -13276,7 +13276,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 375.285 38.1 0)
 			(effects
 				(font
@@ -13285,7 +13285,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402B104K160CT"
 			(at 375.285 38.1 0)
 			(effects
 				(font
@@ -13800,7 +13800,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 238.76 41.91 0)
 			(effects
 				(font
@@ -13809,7 +13809,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402B104K160CT"
 			(at 238.76 41.91 0)
 			(effects
 				(font
@@ -14024,7 +14024,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 221.615 182.245 0)
 			(effects
 				(font
@@ -14033,7 +14033,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "WR04X1002FTL"
 			(at 221.615 182.245 0)
 			(effects
 				(font
@@ -14120,7 +14120,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 284.48 41.91 0)
 			(effects
 				(font
@@ -14129,7 +14129,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402B104K160CT"
 			(at 284.48 41.91 0)
 			(effects
 				(font
@@ -14279,7 +14279,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 279.4 102.87 0)
 			(effects
 				(font
@@ -14288,7 +14288,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "WR04X5101FTL"
 			(at 279.4 102.87 0)
 			(effects
 				(font
@@ -14617,7 +14617,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 261.62 41.91 0)
 			(effects
 				(font
@@ -14626,7 +14626,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402B104K160CT"
 			(at 261.62 41.91 0)
 			(effects
 				(font
@@ -14713,7 +14713,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 215.9 41.91 0)
 			(effects
 				(font
@@ -14722,7 +14722,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402B104K160CT"
 			(at 215.9 41.91 0)
 			(effects
 				(font
@@ -14872,7 +14872,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 114.3 191.135 0)
 			(effects
 				(font
@@ -14881,7 +14881,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "WR04X1001FTL"
 			(at 114.3 191.135 0)
 			(effects
 				(font
@@ -15213,7 +15213,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 172.085 41.91 0)
 			(effects
 				(font
@@ -15222,7 +15222,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402B104K160CT"
 			(at 172.085 41.91 0)
 			(effects
 				(font
@@ -15745,7 +15745,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 360.045 185.42 0)
 			(effects
 				(font
@@ -15754,7 +15754,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "WR04X4700FTL"
 			(at 360.045 185.42 0)
 			(effects
 				(font
@@ -15841,7 +15841,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 182.245 41.91 0)
 			(effects
 				(font
@@ -15850,7 +15850,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402B104K160CT"
 			(at 182.245 41.91 0)
 			(effects
 				(font
@@ -16160,7 +16160,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "KYOCERA AVX"
 			(at 375.92 111.125 0)
 			(effects
 				(font
@@ -16169,7 +16169,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "TAJR225M016RNJ"
 			(at 375.92 111.125 0)
 			(effects
 				(font
@@ -16256,7 +16256,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 207.01 41.91 0)
 			(effects
 				(font
@@ -16265,7 +16265,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402X105K160CT"
 			(at 207.01 41.91 0)
 			(effects
 				(font
@@ -16352,7 +16352,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 273.05 41.91 0)
 			(effects
 				(font
@@ -16361,7 +16361,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402B104K160CT"
 			(at 273.05 41.91 0)
 			(effects
 				(font
@@ -16576,7 +16576,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Everlight"
 			(at 349.25 185.42 0)
 			(effects
 				(font
@@ -16585,7 +16585,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "19-21SURC/S530-A2/TR8"
 			(at 349.25 185.42 0)
 			(effects
 				(font
@@ -16672,7 +16672,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 334.01 111.125 0)
 			(effects
 				(font
@@ -16681,7 +16681,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0603X106M6R3CT"
 			(at 334.01 111.125 0)
 			(effects
 				(font
@@ -16917,7 +16917,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 250.19 41.91 0)
 			(effects
 				(font
@@ -16926,7 +16926,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402B104K160CT"
 			(at 250.19 41.91 0)
 			(effects
 				(font
@@ -17101,7 +17101,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Everlight"
 			(at 45.72 245.745 0)
 			(effects
 				(font
@@ -17110,7 +17110,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "19-213/BHC-ZL1M2RY/3T"
 			(at 45.72 245.745 0)
 			(effects
 				(font
@@ -17195,7 +17195,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 163.83 181.61 0)
 			(effects
 				(font
@@ -17204,7 +17204,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "WR04X5101FTL"
 			(at 163.83 181.61 0)
 			(effects
 				(font
@@ -17419,7 +17419,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 118.11 100.33 0)
 			(effects
 				(font
@@ -17428,7 +17428,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "WR04X27R0FTL"
 			(at 118.11 100.33 0)
 			(effects
 				(font
@@ -17679,7 +17679,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 366.395 114.935 0)
 			(effects
 				(font
@@ -17688,7 +17688,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402N471J500LT"
 			(at 366.395 114.935 0)
 			(effects
 				(font
@@ -17790,7 +17790,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" " UK-B0273-SP25Y"
+		(property "MPN" "UK-B0273-SP25Y"
 			(at 175.26 193.04 0)
 			(effects
 				(font
@@ -17866,7 +17866,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 118.11 102.87 0)
 			(effects
 				(font
@@ -17875,7 +17875,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "WR04X27R0FTL"
 			(at 118.11 102.87 0)
 			(effects
 				(font
@@ -17960,7 +17960,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 56.515 245.745 0)
 			(effects
 				(font
@@ -17969,7 +17969,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "WR04X4700FTL"
 			(at 56.515 245.745 0)
 			(effects
 				(font
@@ -18161,7 +18161,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" " UK-B0273-SP25Y"
+		(property "MPN" "UK-B0273-SP25Y"
 			(at 233.045 188.595 0)
 			(effects
 				(font
@@ -18313,7 +18313,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "DNP"
 			(at 163.83 193.04 0)
 			(effects
 				(font
@@ -18504,7 +18504,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 338.455 49.53 0)
 			(effects
 				(font
@@ -18513,7 +18513,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "WR04X1001FTL"
 			(at 338.455 49.53 0)
 			(effects
 				(font
@@ -18665,7 +18665,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 386.715 111.125 0)
 			(effects
 				(font
@@ -18674,7 +18674,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0603X106M6R3CT"
 			(at 386.715 111.125 0)
 			(effects
 				(font
@@ -19056,7 +19056,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Walsin"
 			(at 95.885 191.135 0)
 			(effects
 				(font
@@ -19065,7 +19065,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402N270J500LT"
 			(at 95.885 191.135 0)
 			(effects
 				(font

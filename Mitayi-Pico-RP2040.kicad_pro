@@ -59,7 +59,10 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "hole_clearance|126530000|86400000|616b150e-d0b4-47be-b26c-da10216e90cb|518f1236-874b-48a9-a7aa-ace09f1b1a49",
+        "hole_clearance|126530000|92180000|3045c0fb-9b8c-447e-bf27-c8e2ae810fba|aaf652f9-64cc-4f2f-afa8-8ae28073dc1d"
+      ],
       "meta": {
         "version": 2
       },
@@ -72,13 +75,13 @@
         "courtyards_overlap": "ignore",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
-        "drill_out_of_range": "ignore",
+        "drill_out_of_range": "error",
         "duplicate_footprints": "warning",
         "extra_footprint": "ignore",
         "footprint": "error",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
-        "hole_clearance": "ignore",
+        "hole_clearance": "error",
         "hole_near_hole": "error",
         "invalid_outline": "error",
         "isolated_copper": "ignore",
@@ -110,7 +113,7 @@
         "track_width": "error",
         "tracks_crossing": "error",
         "unconnected_items": "error",
-        "unresolved_variable": "error",
+        "unresolved_variable": "ignore",
         "via_dangling": "warning",
         "zones_intersect": "error"
       },
@@ -512,12 +515,12 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
-      "pos_files": "",
+      "plot": "Export/R0.6/[2] 07-04-2024/PCB/",
+      "pos_files": "Export/R0.6/[2] 07-04-2024/Assembly/",
       "specctra_dsn": "",
-      "step": "Export/[6] 23-09-2022/r0.4/3D/Mitayi-Pico-RP2040-r0.4-STEP-23092022-01.step",
+      "step": "Export/R0.6/[2] 07-04-2024/3D/Mitayi-Pico-RP2040-R0.6-STEP-07042024-1.step",
       "svg": "",
-      "vrml": "Export/[6] 23-09-2022/r0.4/3D/Mitayi-Pico-RP2040-r0.4-VRML-23092022-01.wrl"
+      "vrml": "Export/R0.6/[2] 07-04-2024/3D/Mitayi-Pico-RP2040-R0.6-VRML-07042024-1.wrl"
     },
     "page_layout_descr_file": ""
   },
@@ -537,6 +540,12 @@
     "bom_settings": {
       "exclude_dnp": false,
       "fields_ordered": [
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": true
+        },
         {
           "group_by": false,
           "label": "Reference",
@@ -593,12 +602,6 @@
         },
         {
           "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": true
-        },
-        {
-          "group_by": false,
           "label": "Description",
           "name": "Description",
           "show": false
@@ -608,7 +611,7 @@
       "group_symbols": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "${ITEM_NUMBER}"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -651,7 +654,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "Export/[8] 18-02-2023/SCH/",
+    "plot_directory": "Export/R0.6/[2] 07-04-2024/SCH/",
     "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",

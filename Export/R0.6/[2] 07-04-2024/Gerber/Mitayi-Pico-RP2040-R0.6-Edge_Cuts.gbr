@@ -1,0 +1,26 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,8.0.1*%
+%TF.CreationDate,2024-04-07T18:53:55+05:30*%
+%TF.ProjectId,Mitayi-Pico-RP2040,4d697461-7969-42d5-9069-636f2d525032,0.6*%
+%TF.SameCoordinates,PX73df160PY5f2d3c0*%
+%TF.FileFunction,Profile,NP*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 8.0.1) date 2024-04-07 18:53:55*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,Profile*%
+%ADD10C,0.100000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+X0Y0D02*
+X0Y21000000D01*
+X51000000Y21000000D02*
+X51000000Y0D01*
+X0Y21000000D02*
+X51000000Y21000000D01*
+X51000000Y0D02*
+X0Y0D01*
+M02*
