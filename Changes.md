@@ -1,5 +1,31 @@
 
 #
+### **+05:30 06:02:46 PM 07-04-2024, Sunday**
+
+  * Added USB breakout pads labels.
+
+#
+### **+05:30 03:11:20 PM 07-04-2024, Sunday**
+
+  * Added teardrops.
+  * Added USB breakout pads on the Back side.
+
+#
+### **+05:30 02:23:56 PM 07-04-2024, Sunday**
+
+  * Moved the BTN jumper to the Front side.
+  * Updated push-button values.
+
+#
+### **+05:30 12:53:11 PM 07-04-2024, Sunday**
+
+  * Replaced DEB_EN jumper with 0R resistor, so that after assembly the board will work out of the box.
+  * Replaced `VR1_CE` with 0R resistor. Footprint remains the same.
+  * Replaced multiple 0402 hand soldering footprints with regular ones.
+  * Replaced the USB-C connector footprint with the KiCad standard footprint.
+  * Replaced the `AREF_SEL` jumper with 0R resistor.
+
+#
 ### **+05:30 11:04:43 PM 02-04-2024, Tuesday**
 
   * Updated fab layers.

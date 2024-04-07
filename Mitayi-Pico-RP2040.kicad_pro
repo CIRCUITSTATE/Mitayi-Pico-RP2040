@@ -3,9 +3,9 @@
     "3dviewports": [],
     "design_settings": {
       "defaults": {
-        "apply_defaults_to_fp_fields": false,
-        "apply_defaults_to_fp_shapes": false,
-        "apply_defaults_to_fp_text": false,
+        "apply_defaults_to_fp_fields": true,
+        "apply_defaults_to_fp_shapes": true,
+        "apply_defaults_to_fp_text": true,
         "board_outline_line_width": 0.1,
         "copper_line_width": 0.15,
         "copper_text_italic": false,
@@ -26,9 +26,9 @@
         },
         "fab_line_width": 0.1,
         "fab_text_italic": false,
-        "fab_text_size_h": 1.0,
-        "fab_text_size_v": 1.0,
-        "fab_text_thickness": 0.15,
+        "fab_text_size_h": 0.3,
+        "fab_text_size_v": 0.3,
+        "fab_text_thickness": 0.075,
         "fab_text_upright": false,
         "other_line_width": 0.15,
         "other_text_italic": false,
@@ -43,9 +43,9 @@
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
-        "silk_text_size_h": 1.0,
-        "silk_text_size_v": 1.0,
-        "silk_text_thickness": 0.15,
+        "silk_text_size_h": 0.7,
+        "silk_text_size_v": 0.7,
+        "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
@@ -149,7 +149,7 @@
       "teardrop_parameters": [
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 0,
+          "td_curve_segcount": 8,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -160,7 +160,7 @@
         },
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 0,
+          "td_curve_segcount": 8,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -574,15 +574,15 @@
           "show": true
         },
         {
-          "group_by": false,
-          "label": "MFR",
-          "name": "MFR",
+          "group_by": true,
+          "label": "MPN",
+          "name": "MPN",
           "show": true
         },
         {
           "group_by": false,
-          "label": "MPN",
-          "name": "MPN",
+          "label": "MFR",
+          "name": "MFR",
           "show": true
         },
         {
@@ -595,7 +595,7 @@
           "group_by": false,
           "label": "#",
           "name": "${ITEM_NUMBER}",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
