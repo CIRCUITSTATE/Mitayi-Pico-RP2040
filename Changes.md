@@ -1,4 +1,16 @@
 
+
+
+#
+### **+05:30 12:01:44 AM 28-08-2024, Wednesday**
+
+  * Updated the silkscreen labels.
+  * Added the `D1` variant string to the project info and silkscreen.
+  * Added net classes and net highlights in the schematic and PCB.
+  * Updated the placements of the OSHW logo.
+  * Added `ALT MPN` column to the BoM.
+  * Manufacturing files generation pending.
+
 #
 ### **+05:30 06:51:07 PM 07-04-2024, Sunday**
 

@@ -5,8 +5,8 @@
 	(uuid "35c47459-45a7-4753-acae-c8b47e7575e1")
 	(paper "A3")
 	(title_block
-		(title "Mitayi Pico - Schematic")
-		(date "2024-04-07")
+		(title "Mitayi Pico - D1")
+		(date "2024-08-28")
 		(rev "0.6")
 		(company "CIRCUITSTATE Electronics LLP (www.circuitstate.com)")
 		(comment 1 "Designed by: Vishnu Mohanan (@vishnumaiea)")
@@ -6029,6 +6029,12 @@
 		(uuid "00d9548c-0d65-47bd-8ebd-07b9c1bc216b")
 	)
 	(junction
+		(at 366.395 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "06cf957e-745f-4dbb-a529-e3ad57206471")
+	)
+	(junction
 		(at 61.595 44.45)
 		(diameter 1.016)
 		(color 0 0 0 0)
@@ -6089,6 +6095,12 @@
 		(uuid "4a90cb87-7a4d-4a0d-88d4-6026410a722b")
 	)
 	(junction
+		(at 375.92 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "50e6db3d-6335-4a52-8f68-6455063ac68d")
+	)
+	(junction
 		(at 276.86 113.03)
 		(diameter 1.016)
 		(color 0 0 0 0)
@@ -6143,6 +6155,12 @@
 		(uuid "864a8ecb-f237-4dfa-b439-b3049d4006ab")
 	)
 	(junction
+		(at 386.715 106.045)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8ac365a9-baad-4c90-a59f-23aa8256d07a")
+	)
+	(junction
 		(at 84.455 44.45)
 		(diameter 1.016)
 		(color 0 0 0 0)
@@ -6153,6 +6171,12 @@
 		(diameter 1.016)
 		(color 0 0 0 0)
 		(uuid "9ae402e9-6382-48fa-9dad-01c3c1cc4b49")
+	)
+	(junction
+		(at 386.715 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a2c5d51d-d990-4cb2-8021-0bd92a7dd748")
 	)
 	(junction
 		(at 192.405 36.83)
@@ -6560,6 +6584,16 @@
 	)
 	(wire
 		(pts
+			(xy 375.92 114.935) (xy 375.92 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13a92e05-ea9b-424b-9fc8-511f38cc189b")
+	)
+	(wire
+		(pts
 			(xy 59.055 41.275) (xy 59.055 44.45)
 		)
 		(stroke
@@ -6790,16 +6824,6 @@
 	)
 	(wire
 		(pts
-			(xy 283.845 198.12) (xy 283.845 199.39)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "2a1322c2-d636-48e8-9d2e-1d3fea530f54")
-	)
-	(wire
-		(pts
 			(xy 76.835 44.45) (xy 81.915 44.45)
 		)
 		(stroke
@@ -7020,6 +7044,16 @@
 	)
 	(wire
 		(pts
+			(xy 386.715 104.775) (xy 386.715 106.045)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43012fb7-9aeb-461e-94f7-54c745b372f1")
+	)
+	(wire
+		(pts
 			(xy 182.245 46.99) (xy 182.245 45.72)
 		)
 		(stroke
@@ -7160,16 +7194,6 @@
 	)
 	(wire
 		(pts
-			(xy 386.715 114.935) (xy 386.715 116.205)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "4db61f43-e537-4cb6-b894-3756cfc65a2a")
-	)
-	(wire
-		(pts
 			(xy 169.545 109.855) (xy 179.07 109.855)
 		)
 		(stroke
@@ -7190,7 +7214,7 @@
 	)
 	(wire
 		(pts
-			(xy 334.01 114.935) (xy 334.01 116.205)
+			(xy 334.01 114.935) (xy 334.01 122.555)
 		)
 		(stroke
 			(width 0)
@@ -7470,6 +7494,16 @@
 	)
 	(wire
 		(pts
+			(xy 366.395 120.65) (xy 375.92 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68ef96b1-3657-404d-908f-4c7723631225")
+	)
+	(wire
+		(pts
 			(xy 192.405 36.83) (xy 192.405 38.1)
 		)
 		(stroke
@@ -7670,6 +7704,16 @@
 	)
 	(wire
 		(pts
+			(xy 276.225 86.995) (xy 277.495 86.995)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c94c3db-017a-427b-b975-7c77bf76e244")
+	)
+	(wire
+		(pts
 			(xy 245.745 188.595) (xy 245.745 193.04)
 		)
 		(stroke
@@ -7740,6 +7784,16 @@
 	)
 	(wire
 		(pts
+			(xy 386.715 114.935) (xy 386.715 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80ff618e-3257-4fa9-914f-55b55e011e29")
+	)
+	(wire
+		(pts
 			(xy 238.76 38.1) (xy 238.76 36.83)
 		)
 		(stroke
@@ -7780,7 +7834,7 @@
 	)
 	(wire
 		(pts
-			(xy 98.425 245.11) (xy 104.775 245.11)
+			(xy 96.52 245.11) (xy 104.775 245.11)
 		)
 		(stroke
 			(width 0)
@@ -8110,6 +8164,16 @@
 	)
 	(wire
 		(pts
+			(xy 386.715 120.65) (xy 387.985 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a06c923c-0a27-42e5-8ba4-c707c4325335")
+	)
+	(wire
+		(pts
 			(xy 194.31 117.475) (xy 207.01 117.475)
 		)
 		(stroke
@@ -8297,16 +8361,6 @@
 			(type solid)
 		)
 		(uuid "aeedcb48-1ff6-4d31-854d-5bf07f5a8c68")
-	)
-	(wire
-		(pts
-			(xy 375.92 114.935) (xy 375.92 116.205)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "af4c144a-938f-48fb-b64d-fdf0448d887f")
 	)
 	(wire
 		(pts
@@ -8630,7 +8684,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 241.3) (xy 152.4 246.38)
+			(xy 152.4 240.665) (xy 152.4 246.38)
 		)
 		(stroke
 			(width 0)
@@ -8727,6 +8781,16 @@
 			(type solid)
 		)
 		(uuid "d5afcaba-cdc6-44d1-b89c-df551b043295")
+	)
+	(wire
+		(pts
+			(xy 283.845 198.12) (xy 283.845 200.66)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "d5f0833b-5fe1-4fe2-b744-b9d1f29881b3")
 	)
 	(wire
 		(pts
@@ -8847,6 +8911,16 @@
 			(type solid)
 		)
 		(uuid "e256dd4f-8a92-43a9-a2d9-9e8021df94e5")
+	)
+	(wire
+		(pts
+			(xy 386.715 120.65) (xy 375.92 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3926644-ec57-4893-b8c4-3c7c47010778")
 	)
 	(wire
 		(pts
@@ -9200,7 +9274,7 @@
 	)
 	(wire
 		(pts
-			(xy 292.735 181.61) (xy 292.735 180.34)
+			(xy 292.735 181.61) (xy 292.735 177.8)
 		)
 		(stroke
 			(width 0)
@@ -11003,67 +11077,65 @@
 		)
 		(uuid "fc35c3f0-1f21-4143-9f41-b46232a4afb3")
 	)
-	(symbol
-		(lib_id "power:GND")
-		(at 386.715 116.205 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0289c547-91b4-4fd4-a442-adc35724942a")
-		(property "Reference" "#PWR019"
-			(at 386.715 122.555 0)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 276.225 86.995 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "24a18515-bb72-4207-98c5-74d52001b754")
+		(property "Netclass" "VBUS"
+			(at 271.1983 86.9866 0)
 			(effects
 				(font
 					(size 0.8 0.8)
+					(italic yes)
 				)
-				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 386.715 120.015 0)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 387.985 120.65 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "39107584-b6fe-4195-82fd-28303b14793d")
+		(property "Netclass" "GND"
+			(at 392.4337 120.698 0)
 			(effects
 				(font
 					(size 0.8 0.8)
+					(italic yes)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 386.715 116.205 0)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 386.715 104.775 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6c6d5064-340c-4ace-b335-01ce9bfde1f2")
+		(property "Netclass" "3V3"
+			(at 386.588 100.965 0)
 			(effects
 				(font
 					(size 0.8 0.8)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 386.715 116.205 0)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 386.715 116.205 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d6957b12-428b-4146-a393-7a7723e4842a")
-		)
-		(instances
-			(project "Mitayi-Pico-RP2040"
-				(path "/35c47459-45a7-4753-acae-c8b47e7575e1"
-					(reference "#PWR019")
-					(unit 1)
+					(italic yes)
 				)
 			)
 		)
@@ -11277,6 +11349,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 260.35 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "A1"
 			(uuid "2693bb5a-f2c2-4091-b4c4-f7c7c5f5c3ea")
 		)
@@ -11418,6 +11499,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 95.885 180.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "561ddb4e-24ff-4d3c-a0ec-92fefb9626a1")
 		)
@@ -11514,6 +11604,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 192.405 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "18e3b18d-a55f-4458-8ced-e7ad402ac853")
 		)
@@ -11548,7 +11647,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 375.793 101.1428 0)
+			(at 375.6986 101.369 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -11739,6 +11838,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 189.23 112.395 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7f6cce8f-931c-4114-9ccf-cbe7dd5464da")
 		)
@@ -11879,6 +11987,15 @@
 			)
 		)
 		(property "Name" ""
+			(at 286.385 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ALT MPN" ""
 			(at 286.385 95.25 0)
 			(effects
 				(font
@@ -12048,6 +12165,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 221.615 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "45c9a652-33ea-462a-91a3-4329db240669")
 		)
@@ -12134,6 +12260,15 @@
 			)
 		)
 		(property "Name" ""
+			(at 368.935 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ALT MPN" ""
 			(at 368.935 52.07 0)
 			(effects
 				(font
@@ -12248,6 +12383,15 @@
 			)
 		)
 		(property "Name" ""
+			(at 353.695 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ALT MPN" ""
 			(at 353.695 43.18 0)
 			(effects
 				(font
@@ -12417,6 +12561,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 227.33 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0ab000e4-1132-48e1-a281-99843caab514")
 		)
@@ -12568,6 +12721,15 @@
 			)
 		)
 		(property "Name" ""
+			(at 45.085 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ALT MPN" ""
 			(at 45.085 128.27 0)
 			(effects
 				(font
@@ -12758,7 +12920,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 283.845 199.39 0)
+		(at 283.845 200.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12766,7 +12928,7 @@
 		(dnp no)
 		(uuid "45aaac74-e26c-4283-806f-9cbf1b41337d")
 		(property "Reference" "#PWR037"
-			(at 283.845 205.74 0)
+			(at 283.845 207.01 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -12775,7 +12937,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 283.718 203.0222 0)
+			(at 283.718 204.2922 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -12783,7 +12945,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 283.845 199.39 0)
+			(at 283.845 200.66 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -12792,7 +12954,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 283.845 199.39 0)
+			(at 283.845 200.66 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -12801,7 +12963,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 283.845 199.39 0)
+			(at 283.845 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12957,6 +13119,15 @@
 			)
 		)
 		(property "Name" "EXP8"
+			(at 165.1 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ALT MPN" ""
 			(at 165.1 246.38 0)
 			(effects
 				(font
@@ -13207,6 +13378,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 279.4 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "322c20d8-35c9-4e9d-9282-b8413a079543")
 		)
@@ -13303,6 +13483,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 375.285 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5e5c8d6f-5f43-4a74-8683-9011a0181557")
 		)
@@ -13382,6 +13571,15 @@
 			)
 		)
 		(property "Name" "VBUS"
+			(at 287.02 86.995 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ALT MPN" ""
 			(at 287.02 86.995 0)
 			(effects
 				(font
@@ -13539,6 +13737,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 294.64 108.585 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "adc09d13-44f1-43c3-a44b-6c258084d8f7")
 		)
@@ -13618,7 +13825,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 334.01 116.205 0)
+		(at 334.01 122.555 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13626,7 +13833,7 @@
 		(dnp no)
 		(uuid "6742a8ae-1ac9-4b88-8cfa-56fe81804088")
 		(property "Reference" "#PWR017"
-			(at 334.01 122.555 0)
+			(at 334.01 128.905 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -13635,7 +13842,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 334.01 120.015 0)
+			(at 334.01 126.365 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -13643,7 +13850,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 334.01 116.205 0)
+			(at 334.01 122.555 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -13652,7 +13859,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 334.01 116.205 0)
+			(at 334.01 122.555 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -13661,7 +13868,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 334.01 116.205 0)
+			(at 334.01 122.555 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13819,6 +14026,15 @@
 			)
 		)
 		(property "Name" ""
+			(at 238.76 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ALT MPN" ""
 			(at 238.76 41.91 0)
 			(effects
 				(font
@@ -14051,6 +14267,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 221.615 182.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ed3281cc-28ec-43be-8f1a-c72fc1823d60")
 		)
@@ -14139,6 +14364,15 @@
 			)
 		)
 		(property "Name" ""
+			(at 284.48 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ALT MPN" ""
 			(at 284.48 41.91 0)
 			(effects
 				(font
@@ -14306,6 +14540,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 279.4 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b7bcc05a-2d49-4ddf-b042-f1297001b29e")
 		)
@@ -14385,6 +14628,15 @@
 			)
 		)
 		(property "Name" "DP"
+			(at 294.64 114.935 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ALT MPN" ""
 			(at 294.64 114.935 0)
 			(effects
 				(font
@@ -14548,6 +14800,15 @@
 				)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 36.195 245.745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d1651b28-abe6-4e94-92a6-786889089229")
 		)
@@ -14644,6 +14905,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 261.62 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b2d08384-5c6d-4df8-b24c-8d685c8988fa")
 		)
@@ -14732,6 +15002,15 @@
 			)
 		)
 		(property "Name" ""
+			(at 215.9 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ALT MPN" ""
 			(at 215.9 41.91 0)
 			(effects
 				(font
@@ -14899,6 +15178,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 114.3 191.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4efb49f9-46b8-4c42-b9b9-f95cf7bf1c26")
 		)
@@ -14987,6 +15275,15 @@
 			)
 		)
 		(property "Name" ""
+			(at 38.354 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ALT MPN" ""
 			(at 38.354 189.23 0)
 			(effects
 				(font
@@ -15150,6 +15447,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 38.354 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "Mitayi-Pico-RP2040"
 				(path "/35c47459-45a7-4753-acae-c8b47e7575e1"
@@ -15232,6 +15538,15 @@
 			)
 		)
 		(property "Name" ""
+			(at 172.085 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ALT MPN" ""
 			(at 172.085 41.91 0)
 			(effects
 				(font
@@ -15332,6 +15647,15 @@
 				(font
 					(size 0.8 0.8)
 				)
+			)
+		)
+		(property "ALT MPN" ""
+			(at 80.645 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -15559,6 +15883,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 164.465 112.395 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fcc9a7ad-ae5b-48d1-a6d1-5ee36b76f289")
 		)
@@ -15772,6 +16105,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 360.045 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f31c6094-d76a-416f-b178-e9d93478d329")
 		)
@@ -15860,6 +16202,15 @@
 			)
 		)
 		(property "Name" ""
+			(at 182.245 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ALT MPN" ""
 			(at 182.245 41.91 0)
 			(effects
 				(font
@@ -15961,6 +16312,15 @@
 				)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 344.805 109.855 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "becff221-b329-4ad9-8733-809ce03d3f12")
 		)
@@ -15978,7 +16338,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 292.735 180.34 0)
+		(at 292.735 177.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15986,7 +16346,7 @@
 		(dnp no)
 		(uuid "9b16a0eb-1f30-420e-bcc0-5b822de215fc")
 		(property "Reference" "#PWR035"
-			(at 292.735 184.15 0)
+			(at 292.735 181.61 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -15995,7 +16355,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 292.608 176.7078 0)
+			(at 292.763 174.4091 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -16003,7 +16363,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 292.735 180.34 0)
+			(at 292.735 177.8 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -16012,7 +16372,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 292.735 180.34 0)
+			(at 292.735 177.8 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -16021,7 +16381,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 292.735 180.34 0)
+			(at 292.735 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16187,6 +16547,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 375.92 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "def423af-a1d0-4487-87b0-6665ff154693")
 		)
@@ -16275,6 +16644,15 @@
 			)
 		)
 		(property "Name" ""
+			(at 207.01 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ALT MPN" ""
 			(at 207.01 41.91 0)
 			(effects
 				(font
@@ -16379,6 +16757,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 273.05 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0c3a46c6-5102-4844-acb7-9d3697d470ca")
 		)
@@ -16460,71 +16847,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 375.92 116.205 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ab7c6038-2028-4330-9227-dc82ac73d1d3")
-		(property "Reference" "#PWR018"
-			(at 375.92 122.555 0)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 375.92 120.015 0)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 375.92 116.205 0)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 375.92 116.205 0)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 375.92 116.205 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "92a24eed-7932-4fc7-a958-368427c9ba16")
-		)
-		(instances
-			(project "Mitayi-Pico-RP2040"
-				(path "/35c47459-45a7-4753-acae-c8b47e7575e1"
-					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
 		(at 349.25 185.42 180)
 		(unit 1)
@@ -16595,6 +16917,15 @@
 			)
 		)
 		(property "Name" "POW_LED"
+			(at 349.25 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ALT MPN" ""
 			(at 349.25 185.42 0)
 			(effects
 				(font
@@ -16699,6 +17030,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 334.01 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "92689243-91cd-4677-a172-51439021a64b")
 		)
@@ -16778,6 +17118,15 @@
 			)
 		)
 		(property "Name" "GND"
+			(at 267.97 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ALT MPN" ""
 			(at 267.97 135.89 0)
 			(effects
 				(font
@@ -16944,6 +17293,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 250.19 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "42d672f1-a279-4154-969d-7ffc3be1a18f")
 		)
@@ -17040,6 +17398,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 38.354 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "Mitayi-Pico-RP2040"
 				(path "/35c47459-45a7-4753-acae-c8b47e7575e1"
@@ -17120,6 +17487,15 @@
 			)
 		)
 		(property "Name" "DBG_LED"
+			(at 45.72 245.745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ALT MPN" ""
 			(at 45.72 245.745 0)
 			(effects
 				(font
@@ -17214,6 +17590,15 @@
 			)
 		)
 		(property "Name" ""
+			(at 163.83 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ALT MPN" ""
 			(at 163.83 181.61 0)
 			(effects
 				(font
@@ -17446,6 +17831,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 118.11 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "91df0d30-01da-47f7-b267-85f7512b8e5e")
 		)
@@ -17607,6 +18001,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 109.855 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f76e7219-38c6-4490-a392-52d177706a4f")
 		)
@@ -17706,6 +18109,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 366.395 114.935 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "361216c4-f2a3-4657-a59a-e1c1bdc7789e")
 		)
@@ -17738,7 +18150,7 @@
 				)
 			)
 		)
-		(property "Value" " UK-B0273-SP25Y"
+		(property "Value" "UK-B0273-SP25Y"
 			(at 175.26 188.722 0)
 			(effects
 				(font
@@ -17791,6 +18203,15 @@
 			)
 		)
 		(property "MPN" "UK-B0273-SP25Y"
+			(at 175.26 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ALT MPN" ""
 			(at 175.26 193.04 0)
 			(effects
 				(font
@@ -17893,6 +18314,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 118.11 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fd2768fa-1ca0-4eb1-b1a5-43cd309a9f07")
 		)
@@ -17979,6 +18409,15 @@
 			)
 		)
 		(property "Name" ""
+			(at 56.515 245.745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ALT MPN" ""
 			(at 56.515 245.745 0)
 			(effects
 				(font
@@ -18083,6 +18522,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 38.354 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "Mitayi-Pico-RP2040"
 				(path "/35c47459-45a7-4753-acae-c8b47e7575e1"
@@ -18109,7 +18557,7 @@
 				)
 			)
 		)
-		(property "Value" " UK-B0273-SP25Y"
+		(property "Value" "UK-B0273-SP25Y"
 			(at 233.045 184.277 0)
 			(effects
 				(font
@@ -18170,6 +18618,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 233.045 188.595 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c97ca43e-aeeb-4399-af6c-92446ed270b3")
 		)
@@ -18187,7 +18644,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 152.4 241.3 0)
+		(at 152.4 240.665 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18195,7 +18652,7 @@
 		(dnp no)
 		(uuid "e4739dd9-5d5f-4914-b206-be4f00db8fd2")
 		(property "Reference" "#PWR09"
-			(at 152.4 245.11 0)
+			(at 152.4 244.475 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -18204,7 +18661,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 152.273 237.6678 0)
+			(at 152.156 237.3033 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -18212,7 +18669,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 152.4 241.3 0)
+			(at 152.4 240.665 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -18221,7 +18678,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 241.3 0)
+			(at 152.4 240.665 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -18230,7 +18687,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 152.4 241.3 0)
+			(at 152.4 240.665 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18331,6 +18788,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 163.83 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6802fe0c-5d9b-4e9e-aa4e-6bcfa0b7c791")
 		)
@@ -18420,6 +18886,15 @@
 			)
 		)
 		(property "Name" ""
+			(at 357.505 108.585 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ALT MPN" ""
 			(at 357.505 108.585 0)
 			(effects
 				(font
@@ -18531,6 +19006,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 338.455 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d1a088d4-a4e8-4240-9be1-1bc6bdab98d2")
 		)
@@ -18548,7 +19032,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 98.425 245.11 270)
+		(at 96.52 245.11 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18556,7 +19040,7 @@
 		(dnp no)
 		(uuid "efb1b3e2-f583-4f0f-81dd-582e26349c88")
 		(property "Reference" "#PWR030"
-			(at 92.075 245.11 0)
+			(at 90.17 245.11 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -18565,7 +19049,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 94.4118 245.237 90)
+			(at 92.5068 245.237 90)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -18573,7 +19057,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 98.425 245.11 0)
+			(at 96.52 245.11 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -18582,7 +19066,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 98.425 245.11 0)
+			(at 96.52 245.11 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -18591,7 +19075,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 98.425 245.11 0)
+			(at 96.52 245.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18692,6 +19176,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 386.715 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0a97784a-8544-4920-92f4-3223dcf1314c")
 		)
@@ -18778,6 +19271,15 @@
 			)
 		)
 		(property "Name" ""
+			(at 105.41 186.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ALT MPN" ""
 			(at 105.41 186.055 0)
 			(effects
 				(font
@@ -19083,6 +19585,15 @@
 				(hide yes)
 			)
 		)
+		(property "ALT MPN" ""
+			(at 95.885 191.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "42359f2c-5957-46dc-85c1-73eb30cb4bce")
 		)
@@ -19234,6 +19745,15 @@
 			)
 		)
 		(property "Name" "USB-Micro"
+			(at 283.845 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ALT MPN" ""
 			(at 283.845 186.69 0)
 			(effects
 				(font
