@@ -1,5 +1,9 @@
 
 
+#
+### **+05:30 08:14:38 PM 28-08-2024, Wednesday**
+
+  * Removed the Micro-USB connector from the PCB.
 
 #
 ### **+05:30 12:01:44 AM 28-08-2024, Wednesday**
