@@ -1,5 +1,10 @@
 
 
+#
+### **+05:30 10:19:35 PM 28-08-2024, Wednesday**
+
+  * Adjusted the PCB thickness to 1 mm from 1.6 mm.
+  * Since there are no changes in the designs, new manufacturing files won't be generated.
 
 #
 ### **+05:30 09:49:49 PM 28-08-2024, Wednesday**
