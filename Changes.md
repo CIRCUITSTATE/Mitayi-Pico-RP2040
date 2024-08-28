@@ -1,5 +1,16 @@
 
 
+
+#
+### **+05:30 09:49:49 PM 28-08-2024, Wednesday**
+
+  * Generated manufacturing files.
+
+#
+### **+05:30 08:29:15 PM 28-08-2024, Wednesday**
+
+  * Replaced the USB-C connector with a custom one with paste layers on the THT pins. This will help in reliably soldering the USB-C connector.
+
 #
 ### **+05:30 08:14:38 PM 28-08-2024, Wednesday**
 

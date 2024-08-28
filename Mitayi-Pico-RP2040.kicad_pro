@@ -608,18 +608,18 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "Export/R0.6/[2] 07-04-2024/PCB/",
-      "pos_files": "Export/R0.6/[2] 07-04-2024/Assembly/",
+      "plot": "Export/R0.6/[4] 28-08-2024/Gerber/",
+      "pos_files": "Export/R0.6/[4] 28-08-2024/Assembly/",
       "specctra_dsn": "",
-      "step": "Export/R0.6/[2] 07-04-2024/3D/Mitayi-Pico-RP2040-R0.6-STEP-07042024-1.step",
+      "step": "Export/R0.6/[4] 28-08-2024/3D/Mitayi-Pico-D1-R0.6-STEP-28082024-1.step",
       "svg": "",
-      "vrml": "Export/R0.6/[2] 07-04-2024/3D/Mitayi-Pico-RP2040-R0.6-VRML-07042024-1.wrl"
+      "vrml": "Export/R0.6/[4] 28-08-2024/3D/Mitayi-Pico-D1-R0.6-VRML-28082024-1.step.wrl"
     },
     "page_layout_descr_file": ""
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "",
+    "bom_export_filename": "Export\\R0.6\\[4] 28-08-2024\\BoM\\Mitayi-Pico-D1-R0.6-BoM-CSV-28082024-1.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -702,8 +702,8 @@
         },
         {
           "group_by": false,
-          "label": "ALT MPN",
-          "name": "ALT MPN",
+          "label": "Alt MPN",
+          "name": "Alt MPN",
           "show": true
         }
       ],
@@ -754,7 +754,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "Export/R0.6/[2] 07-04-2024/SCH/",
+    "plot_directory": "Export/R0.6/[4] 28-08-2024/SCH/",
     "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
