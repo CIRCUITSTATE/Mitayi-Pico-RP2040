@@ -29,7 +29,7 @@
 - **Author:** Vishnu Mohanan (@vishnumaiea)
 - **Latest Revision:** `R0.6`
 - **Layer Count:** 2
-- **Thickness:** 1.6 mm
+- **Thickness:** 1 mm
 - **Dimensions:** 51 x 21 mm
 - **EDA Tool:** KiCad V9
 - **License:** MIT
