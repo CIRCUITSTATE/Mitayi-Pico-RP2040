@@ -1,0 +1,212 @@
++05:30 12:11:08 PM 27-04-2025, Sunday
+
+KiExport v0.0.36
+CLI tool to export design and manufacturing files from KiCad projects.
+Author: Vishnu Mohanan (@vishnumaiea, @vizmohanan)
+Contributors: Dominic Le Blanc (@domleblanc94)
+
+run [INFO]: Running KiExport with configuration file 'kiexport.json'.
+load_config [INFO]: Loading default configuration.
+load_config [INFO]: Loading configuration from 'kiexport.json'.
+run [INFO]: Found the following commands in the configuration file: ['gerbers', 'sch_pdf', 'bom', 'ibom', 'pcb_pdf', 'positions', 'svg', ['pcb_render', 'PCB-Front'], ['pcb_render', 'PCB-Back'], ['pcb_render', 'PCB-Left'], ['pcb_render', 'PCB-Right'], ['pcb_render', 'PCB-Parts-Front'], ['pcb_render', 'PCB-Parts-Back'], ['pcb_render', 'PCB-Pads-Front'], ['pcb_render', 'PCB-Pads-Back'], ['pcb_render', 'PCB-Paste-Front'], ['pcb_render', 'PCB-Paste-Back'], ['ddd', 'STEP'], ['ddd', 'VRML']], 19.
+run [INFO]: Project Directory: D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1
+run [INFO]: PCB File: Mitayi-Pico-D1.kicad_pcb
+run [INFO]: Schematic File: Mitayi-Pico-D1.kicad_sch
+
+generateDrills [INFO]: Project name is 'Mitayi-Pico-D1' and revision is R0.6.
+generateDrills [INFO]: CLI directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' is not empty. Using the CLI directory.
+generateDrills [INFO]: Output directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' already exists.
+generateDrills [INFO]: Revision directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6' does not exist. Creating it now.
+generateDrills [INFO]: Target directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Gerber' does not exist. Creating it now.
+generateDrills [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export drill --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Gerber/" --format "excellon" --drill-origin "plot" --excellon-zeros-format "decimal" --excellon-oval-format "route" --excellon-units "mm" --excellon-separate-th --generate-map --map-format "pdf" "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generateDrills [OK]: Drill files exported successfully.
+
+generateGerbers [INFO]: Project name is 'Mitayi-Pico-D1' and revision is R0.6.
+generateGerbers [INFO]: CLI directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' is not empty. Using the CLI directory.
+generateGerbers [INFO]: Output directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' already exists.
+generateGerbers [INFO]: Target directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Gerber' already exists. Files may be overwritten.
+generateGerbers [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export gerbers --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Gerber" --layers "F.Cu,B.Cu,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,F.Mask,B.Mask,User.Drawings,User.Comments,Edge.Cuts,F.Courtyard,B.Courtyard,F.Fab,B.Fab" --no-netlist --use-drill-file-origin --precision 6 --no-protel-ext "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generateGerbers [OK]: Gerber files exported successfully.
+generateGerbers [OK]: ZIP file 'Mitayi-Pico-D1-R0.6-Gerber-27042025-1.zip' created successfully.
+
+generateSchPdf [INFO]: Project name is 'Mitayi-Pico-D1' and revision is R0.6.
+generateSchPdf [INFO]: CLI directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' is not empty. Using the CLI directory.
+generateSchPdf [INFO]: Output directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' already exists.
+generateSchPdf [INFO]: Target directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/SCH' does not exist. Creating it now.
+generateSchPdf [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" sch export pdf --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/SCH/Mitayi-Pico-D1-R0.6-SCH-27042025-1.pdf" --theme "User" "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_sch"
+generateSchPdf [OK]: Schematic PDF file exported successfully.
+
+generateBom [INFO]: Project name is 'Mitayi-Pico-D1' and revision is R0.6.
+generateBom [INFO]: CLI directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' is not empty. Using the CLI directory.
+generateBom [INFO]: Output directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' already exists.
+generateBom [INFO]: Target directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/BoM' does not exist. Creating it now.
+generateBom [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" sch export bom --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/BoM/Mitayi-Pico-D1-R0.6-BoM-CSV-27042025-1.csv" --preset "Group by MPN-DNP" --format-preset "CSV" --fields "${ITEM_NUMBER},Reference,Value,Name,Footprint,${QUANTITY},${DNP},MPN,MFR,Alt MPN" --labels "#,Reference,Value,Name,Footprint,Qty,DNP,MPN,MFR,Alt MPN" --group-by "${DNP},MPN" "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_sch"
+generateBom [OK]: BoM file exported successfully.
+
+generateiBoM [INFO]: Project name is 'Mitayi-Pico-D1' and revision is R0.6.
+generateiBoM [INFO]: CLI directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' is not empty. Using the CLI directory.
+generateiBoM [INFO]: Output directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' already exists.
+generateiBoM [INFO]: Target directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/BoM' already exists. Files may be overwritten.
+generateBom [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\python.exe" "C:\Users\vishn\Documents\KiCad\9.0\3rdparty\plugins\org_openscopeproject_InteractiveHtmlBom\generate_interactive_bom.py" --dest-dir "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/BoM" --name-format "Mitayi-Pico-D1-R0.6-BoM-HTML-27042025-1" --dark-mode --highlight-pin1 "all" --checkboxes "Source,Placed" --bom-view "left-right" --layer-view "FB" --no-browser --include-tracks --include-nets --sort-order "C,R,L,D,U,Y,X,F,SW,A,~,HS,CNN,J,P,NT,MH" --show-fields "Value,Footprint,Name,MPN,MFR,,Alt MPN" --group-fields "Value,Footprint,MPN" "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generateiBoM [INFO]: Interactive HTML BoM generated successfully.
+
+generatePcbPdf [INFO]: Project name is 'Mitayi-Pico-D1' and revision is R0.6.
+generatePcbPdf [INFO]: CLI directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' is not empty. Using the CLI directory.
+generatePcbPdf [INFO]: Output directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' already exists.
+generatePcbPdf [INFO]: Target directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/PCB' does not exist. Creating it now.
+generatePcbPdf [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export pdf --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/PCB/Mitayi-Pico-D1-R0.6-F_Cu.pdf" --layers "F.Cu,Edge.Cuts" --include-border-title --theme "User" --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePcbPdf [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export pdf --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/PCB/Mitayi-Pico-D1-R0.6-B_Cu.pdf" --layers "B.Cu,Edge.Cuts" --include-border-title --theme "User" --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePcbPdf [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export pdf --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/PCB/Mitayi-Pico-D1-R0.6-F_Paste.pdf" --layers "F.Paste,Edge.Cuts" --include-border-title --theme "User" --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePcbPdf [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export pdf --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/PCB/Mitayi-Pico-D1-R0.6-B_Paste.pdf" --layers "B.Paste,Edge.Cuts" --include-border-title --theme "User" --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePcbPdf [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export pdf --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/PCB/Mitayi-Pico-D1-R0.6-F_Silkscreen.pdf" --layers "F.Silkscreen,Edge.Cuts" --include-border-title --theme "User" --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePcbPdf [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export pdf --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/PCB/Mitayi-Pico-D1-R0.6-B_Silkscreen.pdf" --layers "B.Silkscreen,Edge.Cuts" --include-border-title --theme "User" --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePcbPdf [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export pdf --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/PCB/Mitayi-Pico-D1-R0.6-F_Mask.pdf" --layers "F.Mask,Edge.Cuts" --include-border-title --theme "User" --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePcbPdf [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export pdf --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/PCB/Mitayi-Pico-D1-R0.6-B_Mask.pdf" --layers "B.Mask,Edge.Cuts" --include-border-title --theme "User" --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePcbPdf [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export pdf --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/PCB/Mitayi-Pico-D1-R0.6-User_Drawings.pdf" --layers "User.Drawings,Edge.Cuts" --include-border-title --theme "User" --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePcbPdf [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export pdf --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/PCB/Mitayi-Pico-D1-R0.6-User_Comments.pdf" --layers "User.Comments,Edge.Cuts" --include-border-title --theme "User" --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePcbPdf [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export pdf --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/PCB/Mitayi-Pico-D1-R0.6-Edge_Cuts.pdf" --layers "Edge.Cuts,Edge.Cuts" --include-border-title --theme "User" --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePcbPdf [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export pdf --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/PCB/Mitayi-Pico-D1-R0.6-F_Courtyard.pdf" --layers "F.Courtyard,Edge.Cuts" --include-border-title --theme "User" --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePcbPdf [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export pdf --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/PCB/Mitayi-Pico-D1-R0.6-B_Courtyard.pdf" --layers "B.Courtyard,Edge.Cuts" --include-border-title --theme "User" --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePcbPdf [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export pdf --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/PCB/Mitayi-Pico-D1-R0.6-F_Fab.pdf" --layers "F.Fab,Edge.Cuts" --include-border-title --theme "User" --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePcbPdf [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export pdf --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/PCB/Mitayi-Pico-D1-R0.6-B_Fab.pdf" --layers "B.Fab,Edge.Cuts" --include-border-title --theme "User" --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePcbPdf [OK]: PCB PDF files exported successfully.
+generatePcbPdf [OK]: ZIP file 'Mitayi-Pico-D1-R0.6-PCB-PDF-27042025-1.zip' created successfully.
+
+generatePositions [INFO]: Project name is 'Mitayi-Pico-D1' and revision is R0.6.
+generatePositions [INFO]: CLI directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' is not empty. Using the CLI directory.
+generatePositions [INFO]: Output directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' already exists.
+generatePositions [INFO]: Target directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Assembly' does not exist. Creating it now.
+generatePositions [INFO]: Running command: "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export pos --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Assembly/Mitayi-Pico-D1-Pos-Front.csv" --side front --format "csv" --units "mm" --use-drill-file-origin "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePositions [INFO]: Running command: "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export pos --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Assembly/Mitayi-Pico-D1-Pos-Back.csv" --side back --format "csv" --units "mm" --use-drill-file-origin "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePositions [INFO]: Running command: "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export pos --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Assembly/Mitayi-Pico-D1-Pos-All.csv" --side both --format "csv" --units "mm" --use-drill-file-origin "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePositions [OK]: Position files exported successfully.
+generatePositions [OK]: ZIP file 'Mitayi-Pico-D1-R0.6-Position-Files-27042025-1.zip' created successfully.
+
+generateSvg [INFO]: Project name is 'Mitayi-Pico-D1' and revision is R0.6.
+generateSvg [INFO]: CLI directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' is not empty. Using the CLI directory.
+generateSvg [INFO]: Output directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' already exists.
+generateSvg [INFO]: Target directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/SVG' does not exist. Creating it now.
+generateSvg [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export svg --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/SVG/Mitayi-Pico-D1-R0.6-F_Cu.svg" --layers "F.Cu," --theme "User" --page-size-mode 0 --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generateSvg [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export svg --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/SVG/Mitayi-Pico-D1-R0.6-B_Cu.svg" --layers "B.Cu," --theme "User" --page-size-mode 0 --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generateSvg [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export svg --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/SVG/Mitayi-Pico-D1-R0.6-F_Paste.svg" --layers "F.Paste," --theme "User" --page-size-mode 0 --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generateSvg [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export svg --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/SVG/Mitayi-Pico-D1-R0.6-B_Paste.svg" --layers "B.Paste," --theme "User" --page-size-mode 0 --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generateSvg [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export svg --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/SVG/Mitayi-Pico-D1-R0.6-F_Silkscreen.svg" --layers "F.Silkscreen," --theme "User" --page-size-mode 0 --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generateSvg [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export svg --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/SVG/Mitayi-Pico-D1-R0.6-B_Silkscreen.svg" --layers "B.Silkscreen," --theme "User" --page-size-mode 0 --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generateSvg [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export svg --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/SVG/Mitayi-Pico-D1-R0.6-F_Mask.svg" --layers "F.Mask," --theme "User" --page-size-mode 0 --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generateSvg [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export svg --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/SVG/Mitayi-Pico-D1-R0.6-B_Mask.svg" --layers "B.Mask," --theme "User" --page-size-mode 0 --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generateSvg [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export svg --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/SVG/Mitayi-Pico-D1-R0.6-User_Drawings.svg" --layers "User.Drawings," --theme "User" --page-size-mode 0 --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generateSvg [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export svg --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/SVG/Mitayi-Pico-D1-R0.6-User_Comments.svg" --layers "User.Comments," --theme "User" --page-size-mode 0 --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generateSvg [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export svg --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/SVG/Mitayi-Pico-D1-R0.6-Edge_Cuts.svg" --layers "Edge.Cuts," --theme "User" --page-size-mode 0 --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generateSvg [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export svg --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/SVG/Mitayi-Pico-D1-R0.6-F_Courtyard.svg" --layers "F.Courtyard," --theme "User" --page-size-mode 0 --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generateSvg [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export svg --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/SVG/Mitayi-Pico-D1-R0.6-B_Courtyard.svg" --layers "B.Courtyard," --theme "User" --page-size-mode 0 --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generateSvg [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export svg --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/SVG/Mitayi-Pico-D1-R0.6-F_Fab.svg" --layers "F.Fab," --theme "User" --page-size-mode 0 --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generateSvg [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export svg --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/SVG/Mitayi-Pico-D1-R0.6-B_Fab.svg" --layers "B.Fab," --theme "User" --page-size-mode 0 --drill-shape-opt 2 "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generateSvg [OK]: SVG files exported successfully.
+generateSvg [OK]: ZIP file 'Mitayi-Pico-D1-R0.6-PCB-SVG-27042025-1.zip' created successfully.
+
+generatePcbRenders [INFO]: Project name is 'Mitayi-Pico-D1' and revision is R0.6.
+generatePcbRenders [INFO]: Using render preset 'PCB-Front' from the config file.
+generatePcbRenders [INFO]: CLI directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' is not empty. Using the CLI directory.
+generatePcbRenders [INFO]: Output directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' already exists.
+generatePcbRenders [INFO]: Target directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Renders' does not exist. Creating it now.
+generatePcbRenders [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb render --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Renders/Mitayi-Pico-D1-R0.6-PCB-Front-27042025-1.png" --width 8000 --height 6000 --side "front" --background "default" --quality "basic" --preset "Parts" --zoom  1 --pan  "0,0,0" --pivot "0,0,0" --rotate "0,0,0" "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePcbRenders [OK]: Render files using preset 'PCB-Front' exported successfully.
+
+generatePcbRenders [INFO]: Project name is 'Mitayi-Pico-D1' and revision is R0.6.
+generatePcbRenders [INFO]: Using render preset 'PCB-Back' from the config file.
+generatePcbRenders [INFO]: CLI directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' is not empty. Using the CLI directory.
+generatePcbRenders [INFO]: Output directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' already exists.
+generatePcbRenders [INFO]: Target directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Renders' already exists. Files may be overwritten.
+generatePcbRenders [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb render --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Renders/Mitayi-Pico-D1-R0.6-PCB-Back-27042025-1.png" --width 8000 --height 6000 --side "back" --background "default" --quality "basic" --preset "Parts" --zoom  1 --pan  "0,0,0" --pivot "0,0,0" --rotate "0,0,0" "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePcbRenders [OK]: Render files using preset 'PCB-Back' exported successfully.
+
+generatePcbRenders [INFO]: Project name is 'Mitayi-Pico-D1' and revision is R0.6.
+generatePcbRenders [INFO]: Using render preset 'PCB-Left' from the config file.
+generatePcbRenders [INFO]: CLI directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' is not empty. Using the CLI directory.
+generatePcbRenders [INFO]: Output directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' already exists.
+generatePcbRenders [INFO]: Target directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Renders' already exists. Files may be overwritten.
+generatePcbRenders [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb render --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Renders/Mitayi-Pico-D1-R0.6-PCB-Left-27042025-1.png" --width 8000 --height 6000 --side "left" --background "default" --quality "basic" --preset "Parts" --zoom  1 --pan  "0,0,0" --pivot "0,0,0" --rotate "0,0,0" "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePcbRenders [OK]: Render files using preset 'PCB-Left' exported successfully.
+
+generatePcbRenders [INFO]: Project name is 'Mitayi-Pico-D1' and revision is R0.6.
+generatePcbRenders [INFO]: Using render preset 'PCB-Right' from the config file.
+generatePcbRenders [INFO]: CLI directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' is not empty. Using the CLI directory.
+generatePcbRenders [INFO]: Output directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' already exists.
+generatePcbRenders [INFO]: Target directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Renders' already exists. Files may be overwritten.
+generatePcbRenders [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb render --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Renders/Mitayi-Pico-D1-R0.6-PCB-Right-27042025-1.png" --width 8000 --height 6000 --side "right" --background "default" --quality "basic" --preset "Parts" --zoom  1 --pan  "0,0,0" --pivot "0,0,0" --rotate "0,0,0" "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePcbRenders [OK]: Render files using preset 'PCB-Right' exported successfully.
+
+generatePcbRenders [INFO]: Project name is 'Mitayi-Pico-D1' and revision is R0.6.
+generatePcbRenders [INFO]: Using render preset 'PCB-Parts-Front' from the config file.
+generatePcbRenders [INFO]: CLI directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' is not empty. Using the CLI directory.
+generatePcbRenders [INFO]: Output directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' already exists.
+generatePcbRenders [INFO]: Target directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Renders' already exists. Files may be overwritten.
+generatePcbRenders [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb render --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Renders/Mitayi-Pico-D1-R0.6-PCB-Parts-Front-27042025-1.png" --width 8000 --height 6000 --side "top" --background "default" --quality "basic" --preset "Parts" --zoom  1 --pan  "0,0,0" --pivot "0,0,0" --rotate "0,0,0" "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePcbRenders [OK]: Render files using preset 'PCB-Parts-Front' exported successfully.
+
+generatePcbRenders [INFO]: Project name is 'Mitayi-Pico-D1' and revision is R0.6.
+generatePcbRenders [INFO]: Using render preset 'PCB-Parts-Back' from the config file.
+generatePcbRenders [INFO]: CLI directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' is not empty. Using the CLI directory.
+generatePcbRenders [INFO]: Output directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' already exists.
+generatePcbRenders [INFO]: Target directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Renders' already exists. Files may be overwritten.
+generatePcbRenders [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb render --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Renders/Mitayi-Pico-D1-R0.6-PCB-Parts-Back-27042025-1.png" --width 8000 --height 6000 --side "bottom" --background "default" --quality "basic" --preset "Parts" --zoom  1 --pan  "0,0,0" --pivot "0,0,0" --rotate "0,0,0" "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePcbRenders [OK]: Render files using preset 'PCB-Parts-Back' exported successfully.
+
+generatePcbRenders [INFO]: Project name is 'Mitayi-Pico-D1' and revision is R0.6.
+generatePcbRenders [INFO]: Using render preset 'PCB-Pads-Front' from the config file.
+generatePcbRenders [INFO]: CLI directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' is not empty. Using the CLI directory.
+generatePcbRenders [INFO]: Output directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' already exists.
+generatePcbRenders [INFO]: Target directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Renders' already exists. Files may be overwritten.
+generatePcbRenders [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb render --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Renders/Mitayi-Pico-D1-R0.6-PCB-Pads-Front-27042025-1.png" --width 8000 --height 6000 --side "top" --background "default" --quality "basic" --preset "Pads" --zoom  1 --pan  "0,0,0" --pivot "0,0,0" --rotate "0,0,0" "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePcbRenders [OK]: Render files using preset 'PCB-Pads-Front' exported successfully.
+
+generatePcbRenders [INFO]: Project name is 'Mitayi-Pico-D1' and revision is R0.6.
+generatePcbRenders [INFO]: Using render preset 'PCB-Pads-Back' from the config file.
+generatePcbRenders [INFO]: CLI directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' is not empty. Using the CLI directory.
+generatePcbRenders [INFO]: Output directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' already exists.
+generatePcbRenders [INFO]: Target directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Renders' already exists. Files may be overwritten.
+generatePcbRenders [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb render --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Renders/Mitayi-Pico-D1-R0.6-PCB-Pads-Back-27042025-1.png" --width 8000 --height 6000 --side "bottom" --background "default" --quality "basic" --preset "Pads" --zoom  1 --pan  "0,0,0" --pivot "0,0,0" --rotate "0,0,0" "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePcbRenders [OK]: Render files using preset 'PCB-Pads-Back' exported successfully.
+
+generatePcbRenders [INFO]: Project name is 'Mitayi-Pico-D1' and revision is R0.6.
+generatePcbRenders [INFO]: Using render preset 'PCB-Paste-Front' from the config file.
+generatePcbRenders [INFO]: CLI directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' is not empty. Using the CLI directory.
+generatePcbRenders [INFO]: Output directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' already exists.
+generatePcbRenders [INFO]: Target directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Renders' already exists. Files may be overwritten.
+generatePcbRenders [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb render --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Renders/Mitayi-Pico-D1-R0.6-PCB-Paste-Front-27042025-1.png" --width 8000 --height 6000 --side "top" --background "default" --quality "basic" --preset "Paste" --zoom  1 --pan  "0,0,0" --pivot "0,0,0" --rotate "0,0,0" "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePcbRenders [OK]: Render files using preset 'PCB-Paste-Front' exported successfully.
+
+generatePcbRenders [INFO]: Project name is 'Mitayi-Pico-D1' and revision is R0.6.
+generatePcbRenders [INFO]: Using render preset 'PCB-Paste-Back' from the config file.
+generatePcbRenders [INFO]: CLI directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' is not empty. Using the CLI directory.
+generatePcbRenders [INFO]: Output directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' already exists.
+generatePcbRenders [INFO]: Target directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Renders' already exists. Files may be overwritten.
+generatePcbRenders [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb render --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/Renders/Mitayi-Pico-D1-R0.6-PCB-Paste-Back-27042025-1.png" --width 8000 --height 6000 --side "bottom" --background "default" --quality "basic" --preset "Paste" --zoom  1 --pan  "0,0,0" --pivot "0,0,0" --rotate "0,0,0" "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generatePcbRenders [OK]: Render files using preset 'PCB-Paste-Back' exported successfully.
+
+generate3D [INFO]: Project name is 'Mitayi-Pico-D1' and revision is R0.6.
+generate3D [INFO]: CLI directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' is not empty. Using the CLI directory.
+generate3D [INFO]: Output directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' already exists.
+generate3D [INFO]: Target directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/3D' does not exist. Creating it now.
+generate3D [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export step --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/3D/Mitayi-Pico-D1-R0.6-STEP-27042025-1.step" --force --subst-models --include-tracks --include-zones "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generate3D [OK]: STEP file exported successfully.
+
+generate3D [INFO]: Project name is 'Mitayi-Pico-D1' and revision is R0.6.
+generate3D [INFO]: CLI directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' is not empty. Using the CLI directory.
+generate3D [INFO]: Output directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export' already exists.
+generate3D [INFO]: Target directory 'D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/3D' already exists. Files may be overwritten.
+generate3D [INFO]: Running command:  "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" pcb export vrml --output "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1/Export/R0.6/2025-04-27/3D/Mitayi-Pico-D1-R0.6-VRML-27042025-1.wrl" --force --units "mm" "D:\Engineering\KiCad\CIRCUITSTATE\Mitayi\Mitayi-Pico\Mitayi-Pico-D1\Mitayi-Pico-D1.kicad_pcb"
+generate3D [OK]: VRML file exported successfully.
+
+run [INFO]: Command execution completed. Statuses:
+run [INFO]: drills: True
+run [INFO]: gerbers: True
+run [INFO]: sch_pdf: True
+run [INFO]: bom: True
+run [INFO]: ibom: True
+run [INFO]: pcb_pdf: True
+run [INFO]: positions: True
+run [INFO]: svg: True
+run [INFO]: pcb_render: True
+run [INFO]: ddd_STEP: True
+run [INFO]: ddd_VRML: True
